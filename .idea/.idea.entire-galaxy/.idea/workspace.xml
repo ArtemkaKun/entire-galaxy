@@ -1,40 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Presets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +35,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" />
       </list>
     </option>
   </component>
@@ -90,11 +88,23 @@
       <option name="presentableId" value="Default" />
       <updated>1605735102002</updated>
       <workItem from="1605735104768" duration="533000" />
+      <workItem from="1605811780988" duration="1644000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

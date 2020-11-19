@@ -11,8 +11,11 @@
         </e>
         <e p="YUART" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Systems" t="Include">
+            <e p="Component" t="Include">
               <e p="GalaxyData.cs" t="Include" />
+              <e p="GalaxyEntities.cs" t="Include" />
+            </e>
+            <e p="Systems" t="Include">
               <e p="GalaxyManager.cs" t="Include" />
             </e>
             <e p="YUART.Scripts.asmdef" t="Include" />
