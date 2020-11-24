@@ -8,7 +8,7 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
     /// Scriptable object, that stores star types' data.
     /// </summary>
     [CreateAssetMenu(fileName = "ScriptableObject/StartTemplatesData", menuName = "ScriptableObject/StartTemplatesData", order = 0)]
-    public class StartTemplatesData : ScriptableObject
+    public class StarTemplatesData : ScriptableObject
     {
         [SerializeField] private StarTypeTemplate typeO;
         [SerializeField] private StarTypeTemplate typeB;

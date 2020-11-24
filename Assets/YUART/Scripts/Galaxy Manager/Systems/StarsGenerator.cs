@@ -19,13 +19,13 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly int _countOfStars;
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
-        private readonly StartTemplatesData _templatesData;
+        private readonly StarTemplatesData _templatesData;
         private readonly int _countOfStarTypes = Enum.GetNames(typeof(StarType)).Length;
 
         private const float ChanceToSpawnNeutronStar = 0.999f;
         private const int MaxStarNameLength = 16;
 
-        public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StartTemplatesData templatesData)
+        public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData)
         {
             _countOfStars = countOfStars;
             _maxSizeOfGalaxy = maxSizeOfGalaxy;

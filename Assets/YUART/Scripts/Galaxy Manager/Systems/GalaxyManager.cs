@@ -2,6 +2,7 @@
 using UnityEngine;
 using YUART.Scripts.Component;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
+using YUART.Scripts.Utilities;
 
 namespace YUART.Scripts.Galaxy_Manager.Systems
 {
@@ -13,7 +14,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       [SerializeField] private GameObject starPrefab;
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
-      [SerializeField] private StartTemplatesData templatesData;
+      [SerializeField] private StarTemplatesData templatesData;
       
       private readonly GalaxyData _data = new GalaxyData();
 
@@ -37,9 +38,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
       private GalaxyEntities ConvertPrefabsToEntities()
       {
-         var starEntity = GameObjectConversionUtility.ConvertGameObjectHierarchy(starPrefab, GameObjectConversionSettings.FromWorld(World.DefaultGameObjectInjectionWorld, _entityAssetStore));
-      
-         return new GalaxyEntities(starEntity);
+         return new GalaxyEntities(starPrefab.ConvertGameObjectIntoEntity(_entityAssetStore));
       }
 
       private void OnDestroy()

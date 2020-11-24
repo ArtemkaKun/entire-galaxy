@@ -20,23 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab/Star.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab/Star.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTemplates/StartTemplatesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTemplates/StarTemplatesData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTemplates/StartTemplatesData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTemplates/StarTemplatesData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +45,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/4e/0b0cc5d4/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/EntityComponentStoreDebug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.10/Runtime/Addressables.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/AddessablesExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -64,14 +58,16 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/Star.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTypesData.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTemplatesData.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/EntityConverter.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +77,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -95,10 +93,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4356">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="4356" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -116,6 +114,9 @@
       <workItem from="1605735104768" duration="533000" />
       <workItem from="1605811780988" duration="6971000" />
       <workItem from="1606058749664" duration="6994000" />
+      <workItem from="1606241581665" duration="1399000" />
+      <workItem from="1606243017002" duration="2000" />
+      <workItem from="1606243111603" duration="5169000" />
     </task>
     <servers />
   </component>
@@ -137,6 +138,74 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="426" height="464" key="DebuggerActiveHint" timestamp="1606246185081">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="426" height="464" key="DebuggerActiveHint/0.0.2560.1409@0.0.2560.1409" timestamp="1606246185081" />
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom" timestamp="1606250904214">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904214" />
+    <state width="2517" height="523" key="GridCell.Tab.0.center" timestamp="1606250904214">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.0.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904214" />
+    <state width="2517" height="523" key="GridCell.Tab.0.left" timestamp="1606250904214">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.0.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904214" />
+    <state width="2517" height="523" key="GridCell.Tab.0.right" timestamp="1606250904214">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.0.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904214" />
+    <state width="2517" height="523" key="GridCell.Tab.1.bottom" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.1.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.1.center" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.1.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.1.left" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.1.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.1.right" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.1.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.2.bottom" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.2.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.2.center" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.2.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.2.left" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.2.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.2.right" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.2.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.3.bottom" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.3.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.3.center" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.3.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.3.left" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.3.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
+    <state width="2517" height="523" key="GridCell.Tab.3.right" timestamp="1606250904215">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="523" key="GridCell.Tab.3.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606250904215" />
     <state x="992" y="395" key="RiderGenerateDialog" timestamp="1605821285644">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
