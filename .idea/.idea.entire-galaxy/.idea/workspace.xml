@@ -20,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab/Star.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefab/Star.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +47,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/Types/TypeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/4e/0b0cc5d4/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/EntityComponentStoreDebug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -46,6 +62,16 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyEntities.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/GalaxyData.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/GalaxyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Systems/StarsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Component/Star.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTypesData.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTemplatesData.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +114,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605735102002</updated>
       <workItem from="1605735104768" duration="533000" />
-      <workItem from="1605811780988" duration="1644000" />
+      <workItem from="1605811780988" duration="6971000" />
+      <workItem from="1606058749664" duration="6994000" />
     </task>
     <servers />
   </component>
@@ -104,8 +131,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="992" y="395" key="RiderGenerateDialog" timestamp="1605821285644">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="992" y="395" key="RiderGenerateDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1605821285644" />
   </component>
 </project>

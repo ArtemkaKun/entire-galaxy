@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ecfb4f27224222850ab796036f6a54, type: 3}
+  m_Name: StarTempaltes
+  m_EditorClassIdentifier: 
+  typeO:
+    temperatureRange: {x: 30000, y: 60000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 11776794
+    lightIntense: 0
+    canHavePlanets: 1
+  typeB:
+    temperatureRange: {x: 10000, y: 30000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 16777139
+    lightIntense: 0
+    canHavePlanets: 1
+  typeA:
+    temperatureRange: {x: 7500, y: 10000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 16777215
+    lightIntense: 0
+    canHavePlanets: 1
+  typeF:
+    temperatureRange: {x: 6000, y: 7500}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 10092543
+    lightIntense: 0
+    canHavePlanets: 1
+  typeG:
+    temperatureRange: {x: 5000, y: 6000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 60415
+    lightIntense: 0
+    canHavePlanets: 1
+  typeK:
+    temperatureRange: {x: 3500, y: 5000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 39423
+    lightIntense: 0
+    canHavePlanets: 1
+  typeM:
+    temperatureRange: {x: 2000, y: 3500}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 255
+    lightIntense: 0
+    canHavePlanets: 1
+  typeT:
+    temperatureRange: {x: 1000, y: 2000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 3368703
+    lightIntense: 0
+    canHavePlanets: 0
+  typeW:
+    temperatureRange: {x: 500, y: 1000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 1198263
+    lightIntense: 0
+    canHavePlanets: 0
+  typeR:
+    temperatureRange: {x: 3000, y: 5000}
+    massRange: {x: 10000, y: 100000}
+    sizeRange: {x: 17.5, y: 150}
+    color:
+      serializedVersion: 2
+      rgba: 39423
+    lightIntense: 0
+    canHavePlanets: 1
+  typeN:
+    temperatureRange: {x: 0, y: 500}
+    massRange: {x: 0, y: 100000}
+    sizeRange: {x: 15, y: 15}
+    color:
+      serializedVersion: 2
+      rgba: 4605510
+    lightIntense: 0.001
+    canHavePlanets: 0

@@ -11,12 +11,28 @@
         </e>
         <e p="YUART" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Component" t="Include">
-              <e p="GalaxyData.cs" t="Include" />
-              <e p="GalaxyEntities.cs" t="Include" />
+            <e p="Galaxy Manager" t="Include">
+              <e p="DataContainers" t="Include">
+                <e p="GalaxyData.cs" t="Include" />
+                <e p="GalaxyEntities.cs" t="Include" />
+                <e p="StarTemplates" t="Include">
+                  <e p="StartTemplatesData.cs" t="Include" />
+                </e>
+                <e p="StarTypeTemplate.cs" t="Include" />
+              </e>
+              <e p="Systems" t="Include">
+                <e p="GalaxyManager.cs" t="Include" />
+                <e p="StarsGenerator.cs" t="Include" />
+              </e>
             </e>
-            <e p="Systems" t="Include">
-              <e p="GalaxyManager.cs" t="Include" />
+            <e p="Star" t="Include">
+              <e p="Components" t="Include">
+                <e p="Star.cs" t="Include" />
+                <e p="StarColor.cs" t="Include" />
+              </e>
+              <e p="Enums" t="Include">
+                <e p="StarType.cs" t="Include" />
+              </e>
             </e>
             <e p="YUART.Scripts.asmdef" t="Include" />
           </e>

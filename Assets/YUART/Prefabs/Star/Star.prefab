@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 600474775428178541}
   - component: {fileID: 2417363870943670943}
   - component: {fileID: 2740285209077237126}
+  - component: {fileID: -2108316833929661730}
+  - component: {fileID: 9166697781841311456}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -60,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f293386142c1f3644ab1e87ef522205f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,7 +95,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 100
   m_SpotAngle: 30
@@ -143,3 +145,36 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &-2108316833929661730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875012632166076902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db6e33d76504c719d2b22721b06b3c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  temperature: 0
+  mass: 0
+  canHavePlanets: 0
+--- !u!114 &9166697781841311456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875012632166076902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b516590fe2116074c9367331865002bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    x: 0
+    y: 0
+    z: 0
+    w: 0
