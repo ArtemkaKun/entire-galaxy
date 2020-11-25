@@ -16,13 +16,21 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     /// </summary>
     public sealed class StarsGenerator
     {
+        #if UNITY_EDITOR
+        public float ChanceToSpawnNeutronStar
+        {
+            get => _chanceToSpawnNeutronStar;
+            set => _chanceToSpawnNeutronStar = value;
+        }
+        #endif
+        
         private readonly int _countOfStars;
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
         private readonly StarTemplatesData _templatesData;
         private readonly int _countOfStarTypes = Enum.GetNames(typeof(StarType)).Length;
 
-        private const float ChanceToSpawnNeutronStar = 0.999f;
+        private float _chanceToSpawnNeutronStar = 0.999f;
         private const int MaxStarNameLength = 16;
 
         public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData)
@@ -46,7 +54,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private void SpawnStar()
         {
-            if (Random.Range(0f, 1f) > ChanceToSpawnNeutronStar)
+            if (Random.Range(0f, 1f) > _chanceToSpawnNeutronStar)
             {
                 SpawnStarObject(StarType.N);
             }

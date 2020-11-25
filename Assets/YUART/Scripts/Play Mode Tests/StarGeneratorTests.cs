@@ -1,13 +1,12 @@
 ﻿using System.Collections;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using UnityEngine.TestTools;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Galaxy_Manager.Systems;
+using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
 using Assert = Unity.Assertions.Assert;
 
@@ -22,58 +21,86 @@ namespace YUART.Scripts.Play_Mode_Tests
         private Entity _starEntity;
         private StarTemplatesData _starTemplates;
 
-        [Test]
-        public async void Generate1000StarsAndCheckCount()
+        [UnityTest]
+        public IEnumerator Generate1000StarsAndCheckCount()
         {
-            await PrepareDataForTest();
+            GenerateTestWorld();
+
+            var stars = GetAllStars();
+
+            Assert.AreEqual(1000, stars.Length);
+
+            yield return null;
             
+            stars.Dispose();
+        }
+
+        [UnityTest]
+        public IEnumerator Generate1000StarsAndCheckIfAllNeuron()
+        {
+            GenerateTestWorld();
+            
+            var stars = GetAllStars();
+
+            var foundNotNeuronStar = false;
+
+            var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+            
+            foreach (var star in stars)
+            {
+                if (entityManager.GetComponentData<Star.Components.Star>(star).type == StarType.N) continue;
+                
+                foundNotNeuronStar = true;
+                
+                break;
+            }
+            
+            Assert.AreEqual(false, foundNotNeuronStar);
+
+            yield return null;
+            
+            stars.Dispose();
+        }
+
+        private void GenerateTestWorld()
+        {
             var starGenerator = new StarsGenerator(1000, 1000, _starEntity, _starTemplates);
-            
+
             starGenerator.GenerateStars();
-            
+        }
+
+        private NativeArray<Entity> GetAllStars()
+        {
             var starQueryDesc = new EntityQueryDesc
             {
                 All = new ComponentType[]
                 {
-                    typeof(Star.Components.Star),
+                    typeof(Star.Components.Star)
                 }
             };
 
-            var stars = World.DefaultGameObjectInjectionWorld.EntityManager.CreateEntityQuery(starQueryDesc).ToEntityArray(Allocator.TempJob);
-            
-            Assert.AreEqual(1000, stars.Length);
-
-            stars.Dispose();
+            return World.DefaultGameObjectInjectionWorld.EntityManager.CreateEntityQuery(starQueryDesc).ToEntityArray(Allocator.TempJob);
         }
 
-        private async Task PrepareDataForTest()
+        [OneTimeSetUp]
+        public void Awake()
         {
-            if (_starEntity == Entity.Null)
-            {
-                _starEntity = await GetStarEntity();
-            }
-
-            if (!_starTemplates)
-            {
-                _starTemplates = await GetStarTemplates();
-            }
+            PrepareDataForTest();
         }
         
-        private async Task<Entity> GetStarEntity()
+        private void PrepareDataForTest()
         {
-            _blobAssetStore = new BlobAssetStore();
-
-            var starItem = await Addressables.LoadAssetAsync<GameObject>("StarPrefab").Task;
+            var starGeneratorData = Resources.Load<StarGenerationData>("StarGeneratorData");
             
-            return starItem.ConvertGameObjectIntoEntity(_blobAssetStore);
+            _blobAssetStore = new BlobAssetStore();
+            _starEntity = starGeneratorData.StarPrefab.ConvertGameObjectIntoEntity(_blobAssetStore);
+            
+            _starTemplates = starGeneratorData.StarTemplatesData;
+            _starTemplates.Initialize();
         }
 
-        private async Task<StarTemplatesData> GetStarTemplates()
-        {
-            return await Addressables.LoadAssetAsync<StarTemplatesData>("StarTemplates").Task;
-        }
-
-        ~StarGeneratorTests()
+        [OneTimeTearDown]
+        public void OnDestroy()
         {
             _blobAssetStore.Dispose();
         }

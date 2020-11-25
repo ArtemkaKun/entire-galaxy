@@ -6,9 +6,9 @@
         "YUART.Scripts",
         "Unity.Addressables",
         "Unity.ResourceManager",
-        "YUART.Scripts.Utilities",
         "Unity.Entities.Hybrid",
-        "Unity.Entities"
+        "Unity.Entities",
+        "3rdPartyAssets"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
