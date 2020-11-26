@@ -156,6 +156,7 @@ MonoBehaviour:
   countOfStars: 100
   maxSizeOfGalaxy: 1000
   templatesData: {fileID: 11400000, guid: 9c4fe782c9f4c254a9a1f04978393c1e, type: 2}
+  secondaryStarTypes: 0a000000
 --- !u!4 &1238992789
 Transform:
   m_ObjectHideFlags: 0

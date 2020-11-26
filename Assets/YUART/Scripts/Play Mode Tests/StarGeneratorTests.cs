@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Linq;
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
@@ -139,7 +141,7 @@ namespace YUART.Scripts.Play_Mode_Tests
 
         private StarsGenerator PrepareStarGenerator()
         {
-            return new StarsGenerator(1000, 1000, _starEntity, _starTemplates);
+            return new StarsGenerator(1000, 1000, _starEntity, _starTemplates, new [] {StarType.N});
         }
 
         private NativeArray<Entity> GetAllStars()

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -29,17 +31,19 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
         private readonly StarTemplatesData _templatesData;
-        private readonly int _countOfStarTypes = Enum.GetNames(typeof(StarType)).Length;
+        private readonly StarType[] _mainStarTypes;
 
         private float _chanceToSpawnNeutronStar = 0.999f;
         private const int MaxStarNameLength = 16;
 
-        public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData)
+        public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData, IEnumerable<StarType> secondaryStarTypes)
         {
             _countOfStars = countOfStars;
             _maxSizeOfGalaxy = maxSizeOfGalaxy;
             _starEntity = starEntity;
             _templatesData = templatesData;
+
+            _mainStarTypes = Enum.GetValues(typeof(StarType)).Cast<StarType>().Except(secondaryStarTypes).ToArray();
         }
 
         /// <summary>
@@ -55,14 +59,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private void SpawnStar()
         {
-            if (Random.Range(0f, 1f) > _chanceToSpawnNeutronStar)
-            {
-                SpawnStarObject(StarType.N);
-            }
-            else
-            {
-                SpawnStarObject((StarType) Random.Range(0, _countOfStarTypes));
-            }
+            SpawnStarObject(Random.Range(0f, 1f) > _chanceToSpawnNeutronStar ? StarType.N : _mainStarTypes.GetRandomElement());
         }
 
         private void SpawnStarObject(StarType type)

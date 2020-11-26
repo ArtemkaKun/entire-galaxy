@@ -1,4 +1,6 @@
-﻿namespace YUART.Scripts.Star.Enums
+﻿using System;
+
+namespace YUART.Scripts.Star.Enums
 {
     /// <summary>
     /// Type (class) of the star.

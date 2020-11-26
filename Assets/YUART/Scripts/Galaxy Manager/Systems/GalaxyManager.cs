@@ -2,6 +2,7 @@
 using UnityEngine;
 using YUART.Scripts.Component;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
+using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
 
 namespace YUART.Scripts.Galaxy_Manager.Systems
@@ -15,6 +16,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
       [SerializeField] private StarTemplatesData templatesData;
+      [SerializeField] private StarType[] secondaryStarTypes;
       
       private readonly GalaxyData _data = new GalaxyData();
 
@@ -27,7 +29,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
          
          InitializeGalaxyEntities();
 
-         new StarsGenerator(countOfStars, maxSizeOfGalaxy, _entities.StarEntity, templatesData).GenerateStars();
+         new StarsGenerator(countOfStars, maxSizeOfGalaxy, _entities.StarEntity, templatesData, secondaryStarTypes).GenerateStars();
       }
 
       private void InitializeGalaxyEntities()

@@ -22,7 +22,11 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +61,16 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTemplatesData.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/EntityConverter.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/3rd Party Assets/SyncAddressables.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/StarGenerationData.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +124,7 @@
       <workItem from="1606329199876" duration="5259000" />
       <workItem from="1606339608220" duration="587000" />
       <workItem from="1606412542735" duration="1023000" />
-      <workItem from="1606413635648" duration="1361000" />
+      <workItem from="1606413635648" duration="3951000" />
     </task>
     <servers />
   </component>

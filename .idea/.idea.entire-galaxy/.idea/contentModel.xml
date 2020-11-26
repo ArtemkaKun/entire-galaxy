@@ -46,6 +46,7 @@
             <e p="Utilities" t="Include">
               <e p="ColorConverter.cs" t="Include" />
               <e p="EntityConverter.cs" t="Include" />
+              <e p="RandomPicker.cs" t="Include" />
               <e p="RangeChecker.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />
             </e>
