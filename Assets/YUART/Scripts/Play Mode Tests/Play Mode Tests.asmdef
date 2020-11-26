@@ -8,7 +8,9 @@
         "Unity.ResourceManager",
         "Unity.Entities.Hybrid",
         "Unity.Entities",
-        "3rdPartyAssets"
+        "3rdPartyAssets",
+        "Unity.Mathematics",
+        "Unity.Transforms"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

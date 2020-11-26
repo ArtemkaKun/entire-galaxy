@@ -2,10 +2,12 @@
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Transforms;
 using UnityEngine;
 using UnityEngine.TestTools;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Galaxy_Manager.Systems;
+using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
 using Assert = Unity.Assertions.Assert;
@@ -24,7 +26,9 @@ namespace YUART.Scripts.Play_Mode_Tests
         [UnityTest]
         public IEnumerator Generate1000StarsAndCheckCount()
         {
-            GenerateTestWorld();
+            var starGenerator = PrepareStarGenerator();
+            
+            starGenerator.GenerateStars();
 
             var stars = GetAllStars();
 
@@ -36,10 +40,10 @@ namespace YUART.Scripts.Play_Mode_Tests
         }
 
         [UnityTest]
-        public IEnumerator Generate1000StarsAndCheckIfAllNeuron()
+        public IEnumerator Generate1000StarsAndCheckIfAllNeutron()
         {
-            GenerateTestWorld();
-            
+            GenerateOnlyNeutronStars();
+
             var stars = GetAllStars();
 
             var foundNotNeuronStar = false;
@@ -61,12 +65,65 @@ namespace YUART.Scripts.Play_Mode_Tests
             
             stars.Dispose();
         }
-
-        private void GenerateTestWorld()
+        
+        [UnityTest]
+        public IEnumerator Generate1000NeutronStarsAndCheckIfAllMatchTemplateParameters()
         {
-            var starGenerator = new StarsGenerator(1000, 1000, _starEntity, _starTemplates);
+            GenerateOnlyNeutronStars();
+
+            var stars = GetAllStars();
+
+            var foundNoMatchedStar = false;
+
+            var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+
+            var neutronStarTemplate = _starTemplates.GetTemplate(StarType.N);
+            
+            foreach (var star in stars)
+            {
+                var starComponent = entityManager.GetComponentData<Star.Components.Star>(star);
+                
+                if (CheckIfFloatInRange(starComponent.mass, neutronStarTemplate.MassRange) && 
+                    CheckIfSizeMatch(entityManager.GetComponentData<NonUniformScale>(star).Value, neutronStarTemplate.SizeRange) &&
+                    CheckIfFloatInRange(starComponent.temperature, neutronStarTemplate.TemperatureRange) &&
+                    starComponent.canHavePlanets == neutronStarTemplate.CanHavePlane &&
+                    entityManager.GetComponentData<StarColor>(star).value.Equals(neutronStarTemplate.Color.ConvertToFloat4())) continue;
+
+                foundNoMatchedStar = true;
+                
+                break;
+            }
+            
+            Assert.AreEqual(false, foundNoMatchedStar);
+
+            yield return null;
+            
+            stars.Dispose();
+        }
+
+        private void GenerateOnlyNeutronStars()
+        {
+            var starGenerator = PrepareStarGenerator();
+
+            starGenerator.ChanceToSpawnNeutronStar = -1;
 
             starGenerator.GenerateStars();
+        }
+
+        private bool CheckIfFloatInRange(float value, Vector2 range)
+        {
+            return value >= range.x && value <= range.y;
+        }
+
+        private bool CheckIfSizeMatch(Vector3 starSize, Vector2 sizeRange)
+        {
+            return starSize.x >= sizeRange.x && starSize.y >= sizeRange.x && starSize.z >= sizeRange.x
+                && starSize.x <= sizeRange.y && starSize.y <= sizeRange.y && starSize.z <= sizeRange.y;
+        }
+
+        private StarsGenerator PrepareStarGenerator()
+        {
+            return new StarsGenerator(1000, 1000, _starEntity, _starTemplates);
         }
 
         private NativeArray<Entity> GetAllStars()

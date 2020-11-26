@@ -44,6 +44,7 @@
               </e>
             </e>
             <e p="Utilities" t="Include">
+              <e p="ColorConverter.cs" t="Include" />
               <e p="EntityConverter.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />
             </e>

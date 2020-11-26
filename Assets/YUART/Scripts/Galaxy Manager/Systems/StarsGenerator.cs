@@ -7,6 +7,7 @@ using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;
+using YUART.Scripts.Utilities;
 using Random = UnityEngine.Random;
 
 namespace YUART.Scripts.Galaxy_Manager.Systems
@@ -82,7 +83,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             entityManager.SetComponentData(star, new StarColor
             {
-                value = new float4(starColor.a, starColor.b, starColor.g, starColor.r)
+                value = starColor.ConvertToFloat4()
             });
         }
 

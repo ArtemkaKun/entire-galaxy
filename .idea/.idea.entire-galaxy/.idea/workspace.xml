@@ -22,17 +22,9 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitTestScene637418480641560399.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitTestScene637418480641560399.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/Play Mode Tests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/Play Mode Tests.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/YUART.Scripts.Utilities.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/YUART.Scripts.Utilities.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/EntityConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/3rd Party Assets/SyncAddressables.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/StarGenerationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
       </list>
     </option>
@@ -99,10 +92,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13716">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13716" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -126,6 +119,8 @@
       <workItem from="1606253152548" duration="1728000" />
       <workItem from="1606329199876" duration="5259000" />
       <workItem from="1606339608220" duration="587000" />
+      <workItem from="1606412542735" duration="1023000" />
+      <workItem from="1606413635648" duration="521000" />
     </task>
     <servers />
   </component>
