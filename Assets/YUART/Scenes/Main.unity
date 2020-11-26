@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 8875012632166076902, guid: b4b06dde5a33c294db711cc677e72492, type: 3}
-  countOfStars: 100
-  maxSizeOfGalaxy: 1000
+  countOfStars: 1000
+  maxSizeOfGalaxy: 10000
   templatesData: {fileID: 11400000, guid: 9c4fe782c9f4c254a9a1f04978393c1e, type: 2}
   secondaryStarTypes: 0a000000
 --- !u!4 &1238992789
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 4.5
+  boost: 10
   positionLerpTime: 0.2
   mouseSensitivityCurve:
     serializedVersion: 2
@@ -263,7 +263,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 100000
+  far clip plane: 1000000
   field of view: 60
   orthographic: 0
   orthographic size: 5

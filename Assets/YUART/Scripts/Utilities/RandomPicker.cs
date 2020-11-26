@@ -1,4 +1,4 @@
-﻿using System;
+﻿using UnityEngine;
 
 namespace YUART.Scripts.Utilities
 {
@@ -9,7 +9,7 @@ namespace YUART.Scripts.Utilities
     {
         public static T GetRandomElement<T>(this T[] array)
         {
-           var randomElementIndex = new Random().Next(array.Length);
+           var randomElementIndex = Random.Range(0, array.Length);
 
            return array[randomElementIndex];
         }

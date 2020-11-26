@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +57,18 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTypesData.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StartTemplatesData.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/EntityConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/3rd Party Assets/SyncAddressables.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/StarGenerationData.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Enums/StarType.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
       </list>
     </option>
   </component>
@@ -91,10 +94,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7648">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="7648" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -119,7 +122,7 @@
       <workItem from="1606329199876" duration="5259000" />
       <workItem from="1606339608220" duration="587000" />
       <workItem from="1606412542735" duration="1023000" />
-      <workItem from="1606413635648" duration="4345000" />
+      <workItem from="1606413635648" duration="6124000" />
     </task>
     <servers />
   </component>
@@ -141,77 +144,96 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="426" height="464" key="DebuggerActiveHint" timestamp="1606246185081">
+    <state width="450" height="464" key="DebuggerActiveHint" timestamp="1606418767792">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="426" height="464" key="DebuggerActiveHint/0.0.2560.1409@0.0.2560.1409" timestamp="1606246185081" />
-    <state width="2517" height="523" key="GridCell.Tab.0.bottom" timestamp="1606340199949">
+    <state width="450" height="464" key="DebuggerActiveHint/0.0.2560.1409@0.0.2560.1409" timestamp="1606418767792" />
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.0.center" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.0.center" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.0.left" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.0.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.0.left" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.0.right" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.0.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.0.right" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.1.bottom" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.0.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.1.bottom" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.1.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.1.center" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.1.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.1.center" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.1.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.1.left" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.1.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.1.left" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.1.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.1.right" timestamp="1606340199949">
+    <state width="2517" height="523" key="GridCell.Tab.1.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.1.right" timestamp="1606419021241">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.1.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199949" />
-    <state width="2517" height="523" key="GridCell.Tab.2.bottom" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.1.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021241" />
+    <state width="2517" height="523" key="GridCell.Tab.2.bottom" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.2.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.2.center" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.2.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.2.center" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.2.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.2.left" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.2.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.2.left" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.2.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.2.right" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.2.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.2.right" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.2.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.3.bottom" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.2.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.3.bottom" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.3.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.3.center" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.3.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.3.center" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.3.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.3.left" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.3.center/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.3.left" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.3.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
-    <state width="2517" height="523" key="GridCell.Tab.3.right" timestamp="1606340199950">
+    <state width="2517" height="523" key="GridCell.Tab.3.left/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
+    <state width="2517" height="523" key="GridCell.Tab.3.right" timestamp="1606419021242">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.3.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606340199950" />
+    <state width="2517" height="523" key="GridCell.Tab.3.right/0.0.2560.1409@0.0.2560.1409" timestamp="1606419021242" />
     <state x="992" y="395" key="RiderGenerateDialog" timestamp="1605821285644">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="992" y="395" key="RiderGenerateDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1605821285644" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\Projects\entire-galaxy\Assets\YUART\Scripts\Galaxy Manager\Systems\StarsGenerator.cs" initialLine="78">
+            <startOffsets>
+              <option value="2509" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2540" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
