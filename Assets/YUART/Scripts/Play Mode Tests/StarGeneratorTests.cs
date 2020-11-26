@@ -129,6 +129,40 @@ namespace YUART.Scripts.Play_Mode_Tests
             
             stars.Dispose();
         }
+        
+        [UnityTest]
+        public IEnumerator Generate1000NotNeutronStarsAndCheckIfAllMatchTemplateParameters()
+        {
+            SetChanceToSpawnNeutronStarAndGenerateStars(1);
+
+            var stars = GetAllStars();
+
+            var foundNoMatchedStar = false;
+
+            var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+
+            foreach (var star in stars)
+            {
+                var starComponent = entityManager.GetComponentData<Star.Components.Star>(star);
+                var starTemplate = _starTemplates.GetTemplate(starComponent.type);
+
+                if (starComponent.mass.CheckIfValueInRange(starTemplate.MassRange) && 
+                    entityManager.GetComponentData<NonUniformScale>(star).Value.CheckIfValueInRange(starTemplate.SizeRange) &&
+                    starComponent.temperature.CheckIfValueInRange(starTemplate.TemperatureRange) &&
+                    starComponent.canHavePlanets == starTemplate.CanHavePlane &&
+                    entityManager.GetComponentData<StarColor>(star).value.Equals(starTemplate.Color.ConvertToFloat4())) continue;
+
+                foundNoMatchedStar = true;
+                
+                break;
+            }
+            
+            Assert.AreEqual(false, foundNoMatchedStar);
+
+            yield return null;
+            
+            stars.Dispose();
+        }
 
         private void SetChanceToSpawnNeutronStarAndGenerateStars(float chanceToSpawnNeutronStar)
         {
