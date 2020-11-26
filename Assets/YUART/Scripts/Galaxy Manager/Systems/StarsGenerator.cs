@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using FastEnumUtility;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -32,9 +34,13 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly Entity _starEntity;
         private readonly StarTemplatesData _templatesData;
         private readonly StarType[] _mainStarTypes;
-
+        
+        private readonly StringBuilder _starNameBuilder = new StringBuilder();
+        
         private float _chanceToSpawnNeutronStar = 0.999f;
         private const int MaxStarNameLength = 16;
+
+        private EntityManager _entityManager;
 
         public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData, IEnumerable<StarType> secondaryStarTypes)
         {
@@ -43,6 +49,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             _starEntity = starEntity;
             _templatesData = templatesData;
 
+            _entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
             _mainStarTypes = Enum.GetValues(typeof(StarType)).Cast<StarType>().Except(secondaryStarTypes).ToArray();
         }
 
@@ -64,9 +71,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private void SpawnStarObject(StarType type)
         {
-            var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-
-            var star = entityManager.Instantiate(_starEntity);
+            var star = _entityManager.Instantiate(_starEntity);
             
             var template = _templatesData.GetTemplate(type);
 
@@ -74,11 +79,11 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             var newStarData = PrepareStarComponent(type, template);
 
-            entityManager.SetComponentData(star, newStarData);
+            _entityManager.SetComponentData(star, newStarData);
 
             var starColor = template.Color;
             
-            entityManager.SetComponentData(star, new StarColor
+            _entityManager.SetComponentData(star, new StarColor
             {
                 value = starColor.ConvertToFloat4()
             });
@@ -112,16 +117,18 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private FixedString32 GetRandomStarName(StarType type)
         {
-            FixedString32 starName = type.ToString();
+            _starNameBuilder.Clear();
+
+            _starNameBuilder.Append(type.ToName());
             
             var charCount = Random.Range(1, MaxStarNameLength);
 
             for (var i = charCount; i >= 0; i--)
             {
-                starName += Random.Range(0, 9).ToString();
+                _starNameBuilder.Append(Random.Range(0, 9));
             }
             
-            return starName;
+            return _starNameBuilder.ToString();
         }
 
         private void SetStarTransforms(Entity star, StarTypeTemplate template)

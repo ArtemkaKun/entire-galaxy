@@ -9,6 +9,17 @@
           <e p="3rdPartyAssets.asmdef" t="Include" />
           <e p="SyncAddressables.cs" t="Include" />
         </e>
+        <e p="Packages" t="Include">
+          <e p="System.Runtime.CompilerServices.Unsafe.4.5.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Runtime.CompilerServices.Unsafe.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+        </e>
         <e p="URP Assets" t="Include">
           <e p="Scripts" t="Include">
             <e p="SimpleCameraController.cs" t="Include" />
