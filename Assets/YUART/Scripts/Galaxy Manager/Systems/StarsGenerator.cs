@@ -24,16 +24,16 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         #if UNITY_EDITOR
         public float ChanceToSpawnNeutronStar
         {
-            get => _chanceToSpawnNeutronStar;
             set => _chanceToSpawnNeutronStar = value;
         }
         #endif
         
-        private readonly int _countOfStars;
+        private readonly int _maxCountOfStars;
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
         private readonly StarTemplatesData _templatesData;
         private readonly StarType[] _mainStarTypes;
+        private readonly GalaxyManager _galaxyManager;
         
         private readonly StringBuilder _starNameBuilder = new StringBuilder();
         
@@ -42,15 +42,16 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private EntityManager _entityManager;
 
-        public StarsGenerator(int countOfStars, float maxSizeOfGalaxy, Entity starEntity, StarTemplatesData templatesData, IEnumerable<StarType> secondaryStarTypes)
+        public StarsGenerator(GalaxyManager galaxyManager)
         {
-            _countOfStars = countOfStars;
-            _maxSizeOfGalaxy = maxSizeOfGalaxy;
-            _starEntity = starEntity;
-            _templatesData = templatesData;
-
+            _maxCountOfStars = galaxyManager.MaxCountOfStars;
+            _maxSizeOfGalaxy = galaxyManager.MaxSizeOfGalaxy;
+            _starEntity = galaxyManager.StarEntity;
+            _templatesData = galaxyManager.StarTemplatesData;
+            _galaxyManager = galaxyManager;
+            
             _entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-            _mainStarTypes = Enum.GetValues(typeof(StarType)).Cast<StarType>().Except(secondaryStarTypes).ToArray();
+            _mainStarTypes = (Enum.GetValues(typeof(StarType)) as StarType[]).Except(galaxyManager.SecondaryStarTypes).ToArray();
         }
 
         /// <summary>
@@ -58,7 +59,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         /// </summary>
         public void GenerateStars()
         {
-            for (var i = 0; i < _countOfStars; i++)
+            for (var i = 0; i < _maxCountOfStars; i++)
             {
                 SpawnStar();
             }
@@ -71,6 +72,8 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private void SpawnStarObject(StarType type)
         {
+            UpdateGalaxyData(type);
+            
             var star = _entityManager.Instantiate(_starEntity);
             
             var template = _templatesData.GetTemplate(type);
@@ -81,12 +84,21 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             _entityManager.SetComponentData(star, newStarData);
 
-            var starColor = template.Color;
+            SetStarColor(template, star);
+        }
+
+        private void UpdateGalaxyData(StarType type)
+        {
+            _galaxyManager.IncrementStarsCountByType(type);
             
-            _entityManager.SetComponentData(star, new StarColor
+            if (type == StarType.N)
             {
-                value = starColor.ConvertToFloat4()
-            });
+                _galaxyManager.IncrementSecondaryStarsCount();
+            }
+            else
+            {
+                _galaxyManager.IncrementMainStarsCount();
+            }
         }
 
         private Star.Components.Star PrepareStarComponent(StarType type, StarTypeTemplate template)
@@ -165,6 +177,16 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private Vector3 GetRandomRotation()
         {
             return new Vector3(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
+        }
+
+        private void SetStarColor(StarTypeTemplate template, Entity star)
+        {
+            var starColor = template.Color;
+
+            _entityManager.SetComponentData(star, new StarColor
+            {
+                value = starColor.ConvertToFloat4()
+            });
         }
     }
 }

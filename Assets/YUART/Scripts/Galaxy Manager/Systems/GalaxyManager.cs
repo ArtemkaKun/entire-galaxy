@@ -12,6 +12,16 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
    /// </summary>
    public sealed class GalaxyManager : MonoBehaviour
    {
+      public int MaxCountOfStars => countOfStars;
+
+      public float MaxSizeOfGalaxy => maxSizeOfGalaxy;
+
+      public Entity StarEntity => _entities.StarEntity;
+
+      public StarTemplatesData StarTemplatesData => templatesData;
+      
+      public StarType[] SecondaryStarTypes => secondaryStarTypes;
+      
       [SerializeField] private GameObject starPrefab;
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
@@ -23,13 +33,38 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       private GalaxyEntities _entities;
       private BlobAssetStore _entityAssetStore;
 
+      /// <summary>
+      /// Increment count of stars by specified type.
+      /// </summary>
+      /// <param name="type">Type of a new star.</param>
+      public void IncrementStarsCountByType(StarType type)
+      {
+         _data.IncrementStarsCountByType(type);
+      }
+      
+      /// <summary>
+      /// Increment count of main stars.
+      /// </summary>
+      public void IncrementMainStarsCount()
+      {
+         _data.IncrementMainStarsCount();
+      }
+
+      /// <summary>
+      /// Increment count of secondary stars.
+      /// </summary>
+      public void IncrementSecondaryStarsCount()
+      {
+         _data.IncrementSecondaryStarsCount();
+      }
+      
       private void Awake()
       {
          templatesData.Initialize();
          
          InitializeGalaxyEntities();
 
-         new StarsGenerator(countOfStars, maxSizeOfGalaxy, _entities.StarEntity, templatesData, secondaryStarTypes).GenerateStars();
+         new StarsGenerator(this).GenerateStars();
       }
 
       private void InitializeGalaxyEntities()

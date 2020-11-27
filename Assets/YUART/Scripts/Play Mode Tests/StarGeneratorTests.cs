@@ -175,7 +175,8 @@ namespace YUART.Scripts.Play_Mode_Tests
 
         private StarsGenerator PrepareStarGenerator()
         {
-            return new StarsGenerator(1000, 1000, _starEntity, _starTemplates, new [] {StarType.N});
+            //return new StarsGenerator(1000, 1000, _starEntity, _starTemplates, new [] {StarType.N}); 27.11.2020 Artem Yurchenko constructor of StarGenerator class was changed, additional code need to be added.
+            return null;
         }
 
         private NativeArray<Entity> GetAllStars()
