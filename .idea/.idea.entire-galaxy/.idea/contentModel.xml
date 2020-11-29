@@ -54,7 +54,8 @@
                 <e p="StarType.cs" t="Include" />
               </e>
               <e p="Systems" t="Include">
-                <e p="StarRotationSystem.cs" t="Include" />
+                <e p="StarRotationAroundSystem.cs" t="Include" />
+                <e p="StarSelfRotation.cs" t="Include" />
               </e>
             </e>
             <e p="Utilities" t="Include">

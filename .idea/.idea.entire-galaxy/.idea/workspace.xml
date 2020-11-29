@@ -22,9 +22,8 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,8 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarSelfRotation.cs" />
       </list>
     </option>
   </component>
@@ -129,7 +130,7 @@
       <workItem from="1606412542735" duration="1023000" />
       <workItem from="1606413635648" duration="8771000" />
       <workItem from="1606507090660" duration="2671000" />
-      <workItem from="1606678905273" duration="3533000" />
+      <workItem from="1606678905273" duration="4962000" />
     </task>
     <servers />
   </component>

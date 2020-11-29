@@ -7,7 +7,7 @@ namespace YUART.Scripts.Star.Systems
     /// <summary>
     /// System, that controls stars' rotation around center of the galaxy.
     /// </summary>
-    public sealed class StarRotationSystem : SystemBase
+    public sealed class StarRotationAroundSystem : SystemBase
     {
         protected override void OnUpdate()
         {
