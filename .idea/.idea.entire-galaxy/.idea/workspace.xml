@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/YUART.Scripts.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +35,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/Star.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/Types/TypeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Core/TimeData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/4e/0b0cc5d4/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/12/ab2330be/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/EntityComponentStoreDebug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.10/Runtime/Addressables.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/AddessablesExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/6c/9c66ee94/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -70,10 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationSystem.cs" />
       </list>
     </option>
   </component>
@@ -129,6 +129,7 @@
       <workItem from="1606412542735" duration="1023000" />
       <workItem from="1606413635648" duration="8771000" />
       <workItem from="1606507090660" duration="2671000" />
+      <workItem from="1606678905273" duration="3533000" />
     </task>
     <servers />
   </component>

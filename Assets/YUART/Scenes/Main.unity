@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 8875012632166076902, guid: b4b06dde5a33c294db711cc677e72492, type: 3}
-  countOfStars: 10000
-  maxSizeOfGalaxy: 100000
+  countOfStars: 2500
+  maxSizeOfGalaxy: 25000
   templatesData: {fileID: 11400000, guid: 9c4fe782c9f4c254a9a1f04978393c1e, type: 2}
   secondaryStarTypes: 0a000000
 --- !u!4 &1238992789

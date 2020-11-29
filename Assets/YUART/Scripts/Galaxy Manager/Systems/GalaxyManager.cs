@@ -21,7 +21,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       public StarTemplatesData StarTemplatesData => templatesData;
       
       public StarType[] SecondaryStarTypes => secondaryStarTypes;
-      
+
       [SerializeField] private GameObject starPrefab;
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;

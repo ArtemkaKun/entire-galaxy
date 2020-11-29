@@ -53,6 +53,9 @@
               <e p="Enums" t="Include">
                 <e p="StarType.cs" t="Include" />
               </e>
+              <e p="Systems" t="Include">
+                <e p="StarRotationSystem.cs" t="Include" />
+              </e>
             </e>
             <e p="Utilities" t="Include">
               <e p="ColorConverter.cs" t="Include" />
