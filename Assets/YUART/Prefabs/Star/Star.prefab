@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   temperature: 0
-  mass: 0
   canHavePlanets: 0
 --- !u!114 &9166697781841311456
 MonoBehaviour:

@@ -15,7 +15,7 @@ namespace YUART.Scripts.Star.Systems
 
             Entities.ForEach((ref Translation translation, ref Rotation rotation, in LocalToWorld localToWorld, in Components.Star starData) =>
             {
-                var rotationStep = Quaternion.AngleAxis(20 * deltaTime / starData.mass, localToWorld.Up);
+                var rotationStep = Quaternion.AngleAxis(200 * deltaTime / starData.spaceBodyData.mass, localToWorld.Up);
                 
                 translation.Value = rotationStep * translation.Value;
                 rotation.Value = rotationStep;

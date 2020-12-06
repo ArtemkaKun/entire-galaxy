@@ -8,6 +8,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
+using YUART.Scripts.Galaxy_Manager.Components;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;
@@ -103,21 +104,24 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
         private Star.Components.Star PrepareStarComponent(StarType type, StarTypeTemplate template)
         {
-            var newStarData = CreateTypeDataFromTemplate(template);
+            var newStarData = CreateTypeDataFromTemplate(type, template);
             
             newStarData.type = type;
-            
-            newStarData.name = GetRandomStarName(type);
-            
+
             return newStarData;
         }
 
-        private Star.Components.Star CreateTypeDataFromTemplate(StarTypeTemplate template)
+        private Star.Components.Star CreateTypeDataFromTemplate(StarType type, StarTypeTemplate template)
         {
             return new Star.Components.Star
             {
                 temperature = GetRandomValueFromRange(template.TemperatureRange),
-                mass = GetRandomValueFromRange(template.MassRange),
+                spaceBodyData = new SpaceBody
+                {
+                    gravityCenter = float3.zero,
+                    mass = GetRandomValueFromRange(template.MassRange),
+                    name = GetRandomStarName(type)
+                },
                 canHavePlanets = template.CanHavePlane
             };
         }

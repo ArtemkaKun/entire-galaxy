@@ -85,7 +85,7 @@ namespace YUART.Scripts.Play_Mode_Tests
             {
                 var starComponent = entityManager.GetComponentData<Star.Components.Star>(star);
                 
-                if (starComponent.mass.CheckIfValueInRange(neutronStarTemplate.MassRange) && 
+                if (starComponent.spaceBodyData.mass.CheckIfValueInRange(neutronStarTemplate.MassRange) && 
                     entityManager.GetComponentData<NonUniformScale>(star).Value.CheckIfValueInRange(neutronStarTemplate.SizeRange) &&
                     starComponent.temperature.CheckIfValueInRange(neutronStarTemplate.TemperatureRange) &&
                     starComponent.canHavePlanets == neutronStarTemplate.CanHavePlane &&
@@ -146,7 +146,7 @@ namespace YUART.Scripts.Play_Mode_Tests
                 var starComponent = entityManager.GetComponentData<Star.Components.Star>(star);
                 var starTemplate = _starTemplates.GetTemplate(starComponent.type);
 
-                if (starComponent.mass.CheckIfValueInRange(starTemplate.MassRange) && 
+                if (starComponent.spaceBodyData.mass.CheckIfValueInRange(starTemplate.MassRange) && 
                     entityManager.GetComponentData<NonUniformScale>(star).Value.CheckIfValueInRange(starTemplate.SizeRange) &&
                     starComponent.temperature.CheckIfValueInRange(starTemplate.TemperatureRange) &&
                     starComponent.canHavePlanets == starTemplate.CanHavePlane &&
