@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using FastEnumUtility;
 using Unity.Collections;
@@ -52,7 +50,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             _galaxyManager = galaxyManager;
             
             _entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-            _mainStarTypes = (Enum.GetValues(typeof(StarType)) as StarType[]).Except(galaxyManager.SecondaryStarTypes).ToArray();
+            _mainStarTypes = FastEnum.GetValues<StarType>().Except(galaxyManager.SecondaryStarTypes).ToArray();
         }
 
         /// <summary>
