@@ -41,7 +41,16 @@
               </e>
               <e p="Systems" t="Include">
                 <e p="GalaxyManager.cs" t="Include" />
+                <e p="GalaxyManagerSingleton.cs" t="Include" />
                 <e p="StarsGenerator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Planet" t="Include">
+              <e p="Components" t="Include">
+                <e p="PlanetComponent.cs" t="Include" />
+              </e>
+              <e p="Enums" t="Include">
+                <e p="PlanerType.cs" t="Include" />
               </e>
             </e>
             <e p="Play Mode Tests" t="Include">
@@ -50,6 +59,7 @@
             </e>
             <e p="Star" t="Include">
               <e p="Components" t="Include">
+                <e p="HavePlanetsTag.cs" t="Include" />
                 <e p="Star.cs" t="Include" />
                 <e p="StarColor.cs" t="Include" />
               </e>
@@ -57,6 +67,7 @@
                 <e p="StarType.cs" t="Include" />
               </e>
               <e p="Systems" t="Include">
+                <e p="PlanetsGenerationSystem.cs" t="Include" />
                 <e p="StarRotationAroundSystem.cs" t="Include" />
                 <e p="StarSelfRotation.cs" t="Include" />
               </e>
@@ -64,6 +75,7 @@
             <e p="Utilities" t="Include">
               <e p="ColorConverter.cs" t="Include" />
               <e p="EntityConverter.cs" t="Include" />
+              <e p="MonoSingleton.cs" t="Include" />
               <e p="RandomPicker.cs" t="Include" />
               <e p="RangeChecker.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />

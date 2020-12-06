@@ -22,14 +22,10 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +40,11 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Core/TimeData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/Star.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/EntityComponentStoreDebug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.10/Runtime/Addressables.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Flyovers/Systems/Aircrafts/AircraftFly.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/StarColor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -69,14 +68,23 @@
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/ColorConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RandomPicker.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarSelfRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Components/SpaceBody.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/Star.cs" />
-        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" />
         <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/StarRotationAroundSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/HavePlanetTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/HavePlanetsTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetGenerationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/MonoSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManagerSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanerType.cs" />
+        <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/PlanetComponent.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +99,12 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -134,7 +148,8 @@
       <workItem from="1606413635648" duration="8771000" />
       <workItem from="1606507090660" duration="2671000" />
       <workItem from="1606678905273" duration="4962000" />
-      <workItem from="1607283100361" duration="693000" />
+      <workItem from="1607283100361" duration="1963000" />
+      <workItem from="1607287048432" duration="2997000" />
     </task>
     <servers />
   </component>
@@ -231,5 +246,9 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="992" y="395" key="RiderGenerateDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1606509625980" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1607283992900">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1607283992900" />
   </component>
 </project>
