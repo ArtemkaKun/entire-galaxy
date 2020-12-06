@@ -1,6 +1,5 @@
 ﻿using Unity.Entities;
 using UnityEngine;
-using YUART.Scripts.Component;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
@@ -18,11 +17,14 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
       public Entity StarEntity => _entities.StarEntity;
 
+      public Entity PlanetEntity => _entities.PlanetEntity;
+
       public StarTemplatesData StarTemplatesData => templatesData;
       
       public StarType[] SecondaryStarTypes => secondaryStarTypes;
 
       [SerializeField] private GameObject starPrefab;
+      [SerializeField] private GameObject planetPrefab;
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
       [SerializeField] private StarTemplatesData templatesData;
@@ -75,7 +77,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
       private GalaxyEntities ConvertPrefabsToEntities()
       {
-         return new GalaxyEntities(starPrefab.ConvertGameObjectIntoEntity(_entityAssetStore));
+         return new GalaxyEntities(starPrefab.ConvertGameObjectIntoEntity(_entityAssetStore), planetPrefab.ConvertGameObjectIntoEntity(_entityAssetStore));
       }
 
       private void OnDestroy()
