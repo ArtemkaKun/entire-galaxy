@@ -1,13 +1,14 @@
 ﻿using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
+using YUART.Scripts.Space_Objects.Components;
 
-namespace YUART.Scripts.Star.Systems
+namespace YUART.Scripts.Space_Objects.Systems
 {
     /// <summary>
     /// System, that handles self rotation of the star.
     /// </summary>
-    public sealed class StarSelfRotation : SystemBase
+    public sealed class SpaceObjectSelfRotationSystem : SystemBase
     {
         private const float RotationAngle = 0.005f;
 
@@ -15,7 +16,7 @@ namespace YUART.Scripts.Star.Systems
         {
             var deltaTime = Time.DeltaTime;
             
-            Entities.WithAll<Components.Star>().ForEach((ref Rotation rotation) =>
+            Entities.WithAll<SpaceObject>().ForEach((ref Rotation rotation) =>
             {
                 rotation.Value = math.mul(rotation.Value, quaternion.RotateY(math.radians(RotationAngle * deltaTime)));
             }).WithBurst().ScheduleParallel();

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6734902141480701306}
   - component: {fileID: 1790551020775428573}
   - component: {fileID: 1216523541495838289}
+  - component: {fileID: 6305716663508176607}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9b25fcfc88378a049a91a983d7dc3d6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,3 +95,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd602f6498247249e604a4c370fc536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
+--- !u!114 &6305716663508176607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674733363572464487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff013d6c1fa201290b740615d003e46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  gravityCenter:
+    x: 0
+    y: 0
+    z: 0
+  canHaveSystem: 0

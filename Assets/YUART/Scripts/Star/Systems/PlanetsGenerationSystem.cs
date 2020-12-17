@@ -21,27 +21,27 @@ namespace YUART.Scripts.Star.Systems
     
         protected override void OnUpdate()
         {
-            var commandBuffer = _endSimCommandBufferSystem.CreateCommandBuffer().AsParallelWriter();
-            
-            var planetEntity = GalaxyManagerSingleton.Instance.PlanetEntity;
-            
-            Entities.WithNone<HavePlanetsTag>().ForEach((Entity entity, int entityInQueryIndex, in Components.Star starData) =>
-            {
-                if (!starData.canHavePlanets)
-                {
-                    commandBuffer.AddComponent<HavePlanetsTag>(entityInQueryIndex, entity);
-                
-                    return;
-                }
-
-                for (int i = 0; i < Mathf.RoundToInt(starData.spaceBodyData.mass / StarMassForOnePlanet); i++)
-                {
-                    commandBuffer.Instantiate(entityInQueryIndex, planetEntity);
-                }
-
-            }).WithBurst().ScheduleParallel();
-        
-            _endSimCommandBufferSystem.AddJobHandleForProducer(Dependency);
+            // var commandBuffer = _endSimCommandBufferSystem.CreateCommandBuffer().AsParallelWriter();
+            //
+            // var planetEntity = GalaxyManagerSingleton.Instance.PlanetEntity;
+            //
+            // Entities.WithNone<HavePlanetsTag>().ForEach((Entity entity, int entityInQueryIndex, in Components.Star starData) =>
+            // {
+            //     if (!starData.canHavePlanets)
+            //     {
+            //         commandBuffer.AddComponent<HavePlanetsTag>(entityInQueryIndex, entity);
+            //     
+            //         return;
+            //     }
+            //
+            //     for (int i = 0; i < Mathf.RoundToInt(starData.spaceBodyData.mass / StarMassForOnePlanet); i++)
+            //     {
+            //         commandBuffer.Instantiate(entityInQueryIndex, planetEntity);
+            //     }
+            //
+            // }).WithBurst().ScheduleParallel();
+            //
+            // _endSimCommandBufferSystem.AddJobHandleForProducer(Dependency);
         }
     }
 }

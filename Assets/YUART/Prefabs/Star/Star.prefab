@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 600474775428178541}
   - component: {fileID: 2417363870943670943}
   - component: {fileID: -2108316833929661730}
-  - component: {fileID: 9166697781841311456}
+  - component: {fileID: 7389292377826501467}
+  - component: {fileID: 4839748136814954910}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -98,7 +99,25 @@ MonoBehaviour:
   type: 0
   temperature: 0
   canHavePlanets: 0
---- !u!114 &9166697781841311456
+--- !u!114 &7389292377826501467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875012632166076902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff013d6c1fa201290b740615d003e46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  gravityCenter:
+    x: 0
+    y: 0
+    z: 0
+  canHaveSystem: 0
+--- !u!114 &4839748136814954910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

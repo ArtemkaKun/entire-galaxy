@@ -1,5 +1,4 @@
 ﻿using Unity.Entities;
-using YUART.Scripts.Galaxy_Manager.Components;
 using YUART.Scripts.Star.Enums;
 
 namespace YUART.Scripts.Star.Components
@@ -10,9 +9,7 @@ namespace YUART.Scripts.Star.Components
     [GenerateAuthoringComponent]
     public struct Star : IComponentData
     {
-        public SpaceBody spaceBodyData;
         public StarType type;
         public float temperature;
-        public bool canHavePlanets;
     }
 }

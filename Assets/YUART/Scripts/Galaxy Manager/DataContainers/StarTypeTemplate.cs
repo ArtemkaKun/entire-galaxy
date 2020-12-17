@@ -17,7 +17,7 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
 
         public Color32 Color => color;
 
-        public bool CanHavePlane => canHavePlanets;
+        public bool CanHavePlanets => canHavePlanets;
         
         [SerializeField] private Vector2 temperatureRange;
         [SerializeField] private Vector2 massRange;
