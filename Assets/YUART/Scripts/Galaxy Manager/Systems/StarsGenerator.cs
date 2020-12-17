@@ -67,7 +67,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             var star = _entityManager.Instantiate(_starEntity);
             
-            var template = TemplateDataConstructorSingleton.Instance.ConstructDataFromType<StarTypeTemplate, StarType>(type);
+            var template = TemplateDataConstructorSingleton.Instance.GetTemplateForType<StarTypeTemplate, StarType>(type);
 
             SetStarTransforms(star, template);
             
@@ -102,7 +102,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             entityManager.SetComponentData(star, new NonUniformScale
                 {
-                    Value = GetRandomValueFromRange(template.SizeRange)
+                    Value = template.SizeRange.GetRandomValueFromRange()
                 }
             );
 
@@ -143,7 +143,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             return new Star.Components.Star
             {
-                temperature = GetRandomValueFromRange(template.TemperatureRange),
+                temperature = template.TemperatureRange.GetRandomValueFromRange(),
                 type = type
             };
         }
@@ -153,15 +153,10 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             return new SpaceObject
             {
                 name = GetRandomStarName(type),
-                mass = GetRandomValueFromRange(template.MassRange),
+                mass = template.MassRange.GetRandomValueFromRange(),
                 gravityCenter = float3.zero,
                 canHaveSystem = template.CanHavePlanets
             };
-        }
-
-        private float GetRandomValueFromRange(Vector2 range)
-        {
-            return Mathf.Abs(range.x - range.y) <= 0.001f ? range.x : Random.Range(range.x, range.y);
         }
 
         private FixedString32 GetRandomStarName(StarType type)

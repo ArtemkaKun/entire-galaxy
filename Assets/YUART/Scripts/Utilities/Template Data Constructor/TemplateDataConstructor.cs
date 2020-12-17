@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Unity.Entities;
+using Unity.Mathematics;
 using UnityEngine;
+using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Galaxy_Manager.DataContainers.Templates;
 using YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates;
+using YUART.Scripts.Space_Objects.Components;
 using YUART.Scripts.Star.Enums;
 
 namespace YUART.Scripts.Utilities.Template_Data_Constructor
@@ -33,9 +37,9 @@ namespace YUART.Scripts.Utilities.Template_Data_Constructor
         /// <typeparam name="T">Expected type of template.</typeparam>
         /// <typeparam name="TS">Type of object.</typeparam>
         /// <returns>Template data.</returns>
-        public T ConstructDataFromType<T, TS>(TS typeOfObject)
-        where T : struct
-        where TS : Enum
+        public T GetTemplateForType<T, TS>(TS typeOfObject)
+            where T : struct
+            where TS : Enum
         {
             var matchedTemplate = _templatesByType[typeOfObject.GetType()];
 

@@ -85,7 +85,7 @@
               <e p="EntityConverter.cs" t="Include" />
               <e p="MonoSingleton.cs" t="Include" />
               <e p="RandomPicker.cs" t="Include" />
-              <e p="RangeChecker.cs" t="Include" />
+              <e p="RangeTool.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />
               <e p="Template Data Constructor" t="Include">
                 <e p="TemplateDataConstructor.cs" t="Include" />
