@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using FastEnumUtility;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
@@ -44,6 +45,23 @@ namespace YUART.Scripts.Utilities.Template_Data_Constructor
             var matchedTemplate = _templatesByType[typeOfObject.GetType()];
 
             return ((ITemplatesContainer<T, TS>) matchedTemplate).GetTemplate(typeOfObject);
+        }
+        
+        /// <summary>
+        /// Construct SpaceObject object from template.
+        /// </summary>
+        /// <param name="typeName">Name of type.</param>
+        /// <param name="template">Template.</param>
+        /// <returns>SpaceObject object.</returns>
+        public SpaceObject CreateSpaceObjectDataFromTemplate(string typeName, ISpaceObjectTemplate template)
+        {
+            return new SpaceObject
+            {
+                name = NameGenerator.GetRandomNameFromType(typeName),
+                mass = template.MassRange.GetRandomValueFromRange(),
+                gravityCenter = float3.zero,
+                canHaveSystem = template.CanHaveSystem
+            };
         }
     }
 }

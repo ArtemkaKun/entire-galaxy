@@ -4,7 +4,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
-using YUART.Scripts.Galaxy_Manager.DataContainers;
+using YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates;
 using YUART.Scripts.Space_Objects.Components;
 using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;
@@ -129,7 +129,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             var newStarData = CreateTypeDataFromTemplate(type, template);
 
-            var newSpaceObjectData = CreateSpaceObjectDataFromTemplate(type, template);
+            var newSpaceObjectData = TemplateDataConstructorSingleton.Instance.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
             
             return (newStarData, newSpaceObjectData);
         }
@@ -140,17 +140,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             {
                 temperature = template.TemperatureRange.GetRandomValueFromRange(),
                 type = type
-            };
-        }
-
-        private SpaceObject CreateSpaceObjectDataFromTemplate(StarType type, StarTypeTemplate template)
-        {
-            return new SpaceObject
-            {
-                name = NameGenerator.GetRandomNameFromType(type.ToName()),
-                mass = template.MassRange.GetRandomValueFromRange(),
-                gravityCenter = float3.zero,
-                canHaveSystem = template.CanHavePlanets
             };
         }
 

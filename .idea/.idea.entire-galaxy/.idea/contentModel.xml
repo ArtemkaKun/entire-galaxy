@@ -32,6 +32,7 @@
                 <e p="GalaxyData.cs" t="Include" />
                 <e p="GalaxyEntities.cs" t="Include" />
                 <e p="Templates" t="Include">
+                  <e p="ISpaceObjectTemplate.cs" t="Include" />
                   <e p="ITemplatesContainer.cs" t="Include" />
                   <e p="StarTemplates" t="Include">
                     <e p="StarTemplatesData.cs" t="Include" />

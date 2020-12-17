@@ -1,13 +1,13 @@
 ﻿using System;
 using UnityEngine;
 
-namespace YUART.Scripts.Galaxy_Manager.DataContainers
+namespace YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates
 {
     /// <summary>
     /// Struct, that store star's type template data.
     /// </summary>
     [Serializable]
-    public struct StarTypeTemplate
+    public struct StarTypeTemplate : ISpaceObjectTemplate
     {
         public Vector2 TemperatureRange => temperatureRange;
 
@@ -17,7 +17,7 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
 
         public Color32 Color => color;
 
-        public bool CanHavePlanets => canHavePlanets;
+        public bool CanHaveSystem => canHavePlanets;
         
         [SerializeField] private Vector2 temperatureRange;
         [SerializeField] private Vector2 massRange;
