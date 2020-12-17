@@ -23,9 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeTool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeTool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Core/TimeData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/EntityComponentStoreDebug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D64F35F4-9493-44AB-84D1-FD5D3D1C9128/9d/3c1630df/FastEnumExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/Star.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,6 +68,7 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructorSingleton.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/RangeTool.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/NameGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
     </changedPaths>
   </component>
@@ -140,7 +139,7 @@
       <workItem from="1607680223146" duration="755000" />
       <workItem from="1608062641953" duration="528000" />
       <workItem from="1608228648434" duration="213000" />
-      <workItem from="1608225448098" duration="6852000" />
+      <workItem from="1608225448098" duration="8633000" />
     </task>
     <servers />
   </component>

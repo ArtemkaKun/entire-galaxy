@@ -84,6 +84,7 @@
               <e p="ColorConverter.cs" t="Include" />
               <e p="EntityConverter.cs" t="Include" />
               <e p="MonoSingleton.cs" t="Include" />
+              <e p="NameGenerator.cs" t="Include" />
               <e p="RandomPicker.cs" t="Include" />
               <e p="RangeTool.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />

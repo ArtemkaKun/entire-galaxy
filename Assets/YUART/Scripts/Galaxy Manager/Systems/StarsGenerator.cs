@@ -1,7 +1,5 @@
 ﻿using System.Linq;
-using System.Text;
 using FastEnumUtility;
-using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
@@ -26,11 +24,8 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly Entity _starEntity;
         private readonly StarType[] _mainStarTypes;
         private readonly GalaxyManager _galaxyManager;
-        
-        private readonly StringBuilder _starNameBuilder = new StringBuilder();
 
         private const float ChanceToSpawnNeutronStar = 0.999f;
-        private const int MaxStarNameLength = 16;
 
         private EntityManager _entityManager;
 
@@ -152,27 +147,11 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             return new SpaceObject
             {
-                name = GetRandomStarName(type),
+                name = NameGenerator.GetRandomNameFromType(type.ToName()),
                 mass = template.MassRange.GetRandomValueFromRange(),
                 gravityCenter = float3.zero,
                 canHaveSystem = template.CanHavePlanets
             };
-        }
-
-        private FixedString32 GetRandomStarName(StarType type)
-        {
-            _starNameBuilder.Clear();
-
-            _starNameBuilder.Append(type.ToName());
-            
-            var charCount = Random.Range(1, MaxStarNameLength);
-
-            for (var i = charCount; i >= 0; i--)
-            {
-                _starNameBuilder.Append(Random.Range(0, 9));
-            }
-            
-            return _starNameBuilder.ToString();
         }
 
         private void SetStarColor(StarTypeTemplate template, Entity star)
