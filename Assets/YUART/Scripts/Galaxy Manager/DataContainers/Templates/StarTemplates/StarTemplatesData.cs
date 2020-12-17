@@ -2,13 +2,13 @@
 using UnityEngine;
 using YUART.Scripts.Star.Enums;
 
-namespace YUART.Scripts.Galaxy_Manager.DataContainers
+namespace YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates
 {
     /// <summary>
     /// Scriptable object, that stores star types' data.
     /// </summary>
     [CreateAssetMenu(fileName = "ScriptableObject/StartTemplatesData", menuName = "ScriptableObject/StartTemplatesData", order = 0)]
-    public class StarTemplatesData : ScriptableObject
+    public class StarTemplatesData : ScriptableObject, ITemplatesContainer<StarTypeTemplate, StarType>
     {
         [SerializeField] private StarTypeTemplate typeO;
         [SerializeField] private StarTypeTemplate typeB;

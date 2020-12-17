@@ -19,15 +19,12 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
       public Entity PlanetEntity => _entities.PlanetEntity;
 
-      public StarTemplatesData StarTemplatesData => templatesData;
-      
       public StarType[] SecondaryStarTypes => secondaryStarTypes;
 
       [SerializeField] private GameObject starPrefab;
       [SerializeField] private GameObject planetPrefab;
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
-      [SerializeField] private StarTemplatesData templatesData;
       [SerializeField] private StarType[] secondaryStarTypes;
       
       private readonly GalaxyData _data = new GalaxyData();
@@ -62,8 +59,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       
       private void Awake()
       {
-         templatesData.Initialize();
-         
          InitializeGalaxyEntities();
 
          new StarsGenerator(this).GenerateStars();

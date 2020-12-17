@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
+using YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates;
 
 namespace YUART.Scripts.Utilities
 {

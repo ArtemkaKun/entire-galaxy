@@ -11,6 +11,7 @@ using YUART.Scripts.Space_Objects.Components;
 using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
+using YUART.Scripts.Utilities.Template_Data_Constructor;
 using Random = UnityEngine.Random;
 
 namespace YUART.Scripts.Galaxy_Manager.Systems
@@ -23,7 +24,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly int _maxCountOfStars;
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
-        private readonly StarTemplatesData _templatesData;
         private readonly StarType[] _mainStarTypes;
         private readonly GalaxyManager _galaxyManager;
         
@@ -39,7 +39,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             _maxCountOfStars = galaxyManager.MaxCountOfStars;
             _maxSizeOfGalaxy = galaxyManager.MaxSizeOfGalaxy;
             _starEntity = galaxyManager.StarEntity;
-            _templatesData = galaxyManager.StarTemplatesData;
             _galaxyManager = galaxyManager;
             
             _entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
@@ -68,7 +67,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             var star = _entityManager.Instantiate(_starEntity);
             
-            var template = _templatesData.GetTemplate(type);
+            var template = TemplateDataConstructorSingleton.Instance.ConstructDataFromType<StarTypeTemplate, StarType>(type);
 
             SetStarTransforms(star, template);
             
@@ -185,7 +184,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             var starColor = template.Color;
 
-            _entityManager.SetComponentData(star, new StarColor()
+            _entityManager.SetComponentData(star, new StarColor
             {
                 value = starColor.ConvertToFloat4()
             });

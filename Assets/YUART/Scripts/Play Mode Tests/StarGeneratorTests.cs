@@ -2,6 +2,7 @@
 using Unity.Entities;
 using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
+using YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates;
 using YUART.Scripts.Utilities;
 
 namespace YUART.Scripts.Play_Mode_Tests

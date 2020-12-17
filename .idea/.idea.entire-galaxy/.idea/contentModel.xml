@@ -31,10 +31,13 @@
               <e p="DataContainers" t="Include">
                 <e p="GalaxyData.cs" t="Include" />
                 <e p="GalaxyEntities.cs" t="Include" />
-                <e p="StarTemplates" t="Include">
-                  <e p="StarTemplatesData.cs" t="Include" />
+                <e p="Templates" t="Include">
+                  <e p="ITemplatesContainer.cs" t="Include" />
+                  <e p="StarTemplates" t="Include">
+                    <e p="StarTemplatesData.cs" t="Include" />
+                    <e p="StarTypeTemplate.cs" t="Include" />
+                  </e>
                 </e>
-                <e p="StarTypeTemplate.cs" t="Include" />
               </e>
               <e p="Systems" t="Include">
                 <e p="GalaxyManager.cs" t="Include" />
@@ -84,6 +87,10 @@
               <e p="RandomPicker.cs" t="Include" />
               <e p="RangeChecker.cs" t="Include" />
               <e p="StarGenerationData.cs" t="Include" />
+              <e p="Template Data Constructor" t="Include">
+                <e p="TemplateDataConstructor.cs" t="Include" />
+                <e p="TemplateDataConstructorSingleton.cs" t="Include" />
+              </e>
             </e>
             <e p="YUART.Scripts.asmdef" t="Include" />
           </e>
