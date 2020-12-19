@@ -1,6 +1,7 @@
 ﻿using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
+using UnityEngine;
 using YUART.Scripts.Space_Objects.Components;
 
 namespace YUART.Scripts.Space_Objects.Systems
@@ -10,7 +11,7 @@ namespace YUART.Scripts.Space_Objects.Systems
     /// </summary>
     public sealed class SpaceObjectSelfRotationSystem : SystemBase
     {
-        private const float RotationAngle = 0.005f;
+        private const float RotationAngle = 500f;
 
         protected override void OnUpdate()
         {

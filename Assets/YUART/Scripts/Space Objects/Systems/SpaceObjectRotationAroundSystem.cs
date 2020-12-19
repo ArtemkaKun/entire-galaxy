@@ -16,12 +16,10 @@ namespace YUART.Scripts.Space_Objects.Systems
 
             Entities.ForEach((ref Translation translation, ref Rotation rotation, in LocalToWorld localToWorld, in SpaceObject objectData) =>
             {
-                var rotationStep = Quaternion.AngleAxis(200 * deltaTime / objectData.mass, localToWorld.Up);
+                var rotationStep = Quaternion.AngleAxis(1000 * deltaTime / objectData.mass, localToWorld.Up);
                 
                 translation.Value = rotationStep * translation.Value;
-                
-                rotation.Value = rotationStep;
-                
+
             }).WithBurst().ScheduleParallel();
         }
     }
