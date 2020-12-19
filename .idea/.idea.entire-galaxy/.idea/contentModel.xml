@@ -43,6 +43,7 @@
               <e p="Systems" t="Include">
                 <e p="GalaxyManager.cs" t="Include" />
                 <e p="GalaxyManagerSingleton.cs" t="Include" />
+                <e p="PlanetGenerator.cs" t="Include" />
                 <e p="StarsGenerator.cs" t="Include" />
               </e>
             </e>
@@ -70,15 +71,11 @@
             </e>
             <e p="Star" t="Include">
               <e p="Components" t="Include">
-                <e p="HavePlanetsTag.cs" t="Include" />
                 <e p="Star.cs" t="Include" />
                 <e p="StarColor.cs" t="Include" />
               </e>
               <e p="Enums" t="Include">
                 <e p="StarType.cs" t="Include" />
-              </e>
-              <e p="Systems" t="Include">
-                <e p="PlanetsGenerationSystem.cs" t="Include" />
               </e>
             </e>
             <e p="Utilities" t="Include">

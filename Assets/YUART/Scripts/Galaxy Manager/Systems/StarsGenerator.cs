@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using FastEnumUtility;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -19,14 +21,14 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     /// </summary>
     public sealed class StarsGenerator
     {
+        private const float ChanceToSpawnNeutronStar = 0.999f;
+        
         private readonly int _maxCountOfStars;
         private readonly float _maxSizeOfGalaxy;
         private readonly Entity _starEntity;
         private readonly StarType[] _mainStarTypes;
         private readonly GalaxyManager _galaxyManager;
-
-        private const float ChanceToSpawnNeutronStar = 0.999f;
-
+        
         private EntityManager _entityManager;
 
         public StarsGenerator(GalaxyManager galaxyManager)
@@ -43,20 +45,24 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         /// <summary>
         /// Generates stars.
         /// </summary>
-        public void GenerateStars()
+        public Stack<Entity> GenerateStars()
         {
+            var stars = new Stack<Entity>(_maxCountOfStars);
+            
             for (var i = 0; i < _maxCountOfStars; i++)
             {
-                SpawnStar();
+                stars.Push(SpawnStar());
             }
+
+            return stars;
         }
 
-        private void SpawnStar()
+        private Entity SpawnStar()
         {
-            SpawnStarObject(Random.Range(0f, 1f) > ChanceToSpawnNeutronStar ? StarType.N : _mainStarTypes.GetRandomElement());
+            return SpawnStarObject(Random.Range(0f, 1f) > ChanceToSpawnNeutronStar ? StarType.N : _mainStarTypes.GetRandomElement());
         }
 
-        private void SpawnStarObject(StarType type)
+        private Entity SpawnStarObject(StarType type)
         {
             UpdateGalaxyData(type);
             
@@ -73,6 +79,8 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             _entityManager.SetComponentData(star, newSpaceObjectData);
 
             SetStarColor(template, star);
+
+            return star;
         }
 
         private void UpdateGalaxyData(StarType type)

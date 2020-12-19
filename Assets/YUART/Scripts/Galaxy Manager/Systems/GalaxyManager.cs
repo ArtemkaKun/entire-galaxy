@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using System;
+using Unity.Entities;
 using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Enums;
@@ -60,8 +61,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       private void Awake()
       {
          InitializeGalaxyEntities();
-
-         new StarsGenerator(this).GenerateStars();
       }
 
       private void InitializeGalaxyEntities()
@@ -75,9 +74,16 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
          return new GalaxyEntities(starPrefab.ConvertGameObjectIntoEntity(_entityAssetStore), planetPrefab.ConvertGameObjectIntoEntity(_entityAssetStore));
       }
 
+      private void Start()
+      {
+         var stars = new StarsGenerator(this).GenerateStars();
+
+         new PlanetGenerator(stars).GeneratePlanets();
+      }
+
       private void OnDestroy()
       {
-         _entityAssetStore.Dispose();
+         _entityAssetStore?.Dispose();
       }
    }
 }

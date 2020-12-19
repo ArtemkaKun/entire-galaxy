@@ -20,9 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectSelfRotationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectSelfRotationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Materials/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Materials/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/HavePlanetsTag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Components/HavePlanetsTag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +57,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Components/SpaceObject.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/StarRotationAroundSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceBodyRotationAroundSystem.cs" />
@@ -60,7 +69,6 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTypeTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/ITemplatesContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/StarTemplates/StarTemplatesData.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplatesContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/TemplateDataConstructor.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTemplatesData.cs" />
@@ -71,10 +79,13 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ISpaceObjectTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTypeTemplate.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectSelfRotationSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kTqoC3BqVTYCRp2dLxtCo82e3z" />
@@ -108,10 +119,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11952">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11952" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -145,7 +156,7 @@
       <workItem from="1608062641953" duration="528000" />
       <workItem from="1608228648434" duration="213000" />
       <workItem from="1608225448098" duration="10511000" />
-      <workItem from="1608383548272" duration="800000" />
+      <workItem from="1608383548272" duration="3169000" />
     </task>
     <servers />
   </component>
