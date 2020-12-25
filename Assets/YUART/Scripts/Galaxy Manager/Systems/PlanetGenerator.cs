@@ -2,7 +2,6 @@
 using System.Linq;
 using FastEnumUtility;
 using Unity.Entities;
-using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.Data_Containers.Templates;
@@ -19,17 +18,15 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     public sealed class PlanetGenerator : SpaceObjectGenerator
     {
         private const int StarMassForOnePlanet = 10000;
-        private const float AreaSize = 1000f;
 
         private readonly Stack<Entity> _stars;
         private readonly GalaxyManager _galaxyManager;
 
         private readonly PlanetType[] _planetTypes = FastEnum.GetValues<PlanetType>().ToArray();
-        private readonly Vector2 _yAxisRange = new Vector2(-100f, 100f);
 
         private EntityManager _entityManager;
 
-        public PlanetGenerator(GalaxyManager galaxyManager, Stack<Entity> stars)
+        public PlanetGenerator(GalaxyManager galaxyManager, Stack<Entity> stars, float areaSize, Vector2 yAxisRange) : base(areaSize, yAxisRange)
         {
             _stars = stars;
             _galaxyManager = galaxyManager;
@@ -77,15 +74,13 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             var template = TemplateDataConstructorSingleton.Instance.GetTemplateForType<SpaceObjectTemplate, PlanetType>(type);
 
-            SetStarTransforms(planet, template, parentPosition);
+            SetSpaceObjectTransforms(planet, template, parentPosition);
 
-            var (newStarData, newSpaceObjectData) = PrepareStarComponent(type, template);
+            _entityManager.SetComponentData(planet, PreparePlanetComponents(type));
 
-            _entityManager.SetComponentData(planet, newStarData);
+            _entityManager.SetComponentData(planet, PrepareSpaceObjectComponent(type.ToName(), template));
 
-            _entityManager.SetComponentData(planet, newSpaceObjectData);
-
-            _templateDataConstructor.SetSpaceObjectColor(template, planet);
+            templateDataConstructor.SetSpaceObjectColor(template, planet);
 
             return planet;
         }
@@ -95,38 +90,9 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             _galaxyManager.IncrementPlanetsCount();
         }
 
-        private void SetStarTransforms(Entity star, SpaceObjectTemplate template, Vector3 parentPosition)
+        private Planet.Components.Planet PreparePlanetComponents(PlanetType type)
         {
-            var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-
-            entityManager.AddComponent<NonUniformScale>(star);
-
-            entityManager.SetComponentData(star, new NonUniformScale
-                {
-                    Value = template.SizeRange.GetRandomValueFromRange()
-                }
-            );
-
-            entityManager.SetComponentData(star, new Translation
-                {
-                    Value = GetRandomPositionInGalaxy(AreaSize, parentPosition, _yAxisRange)
-                }
-            );
-
-            entityManager.SetComponentData(star, new Rotation
-                {
-                    Value = quaternion.Euler(GetRandomRotation())
-                }
-            );
-        }
-
-        private (Planet.Components.Planet, SpaceObject) PrepareStarComponent(PlanetType type, SpaceObjectTemplate template)
-        {
-            var newStarData = CreateTypeDataFromTemplate(type);
-
-            var newSpaceObjectData = _templateDataConstructor.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
-
-            return (newStarData, newSpaceObjectData);
+            return CreateTypeDataFromTemplate(type);
         }
 
         private Planet.Components.Planet CreateTypeDataFromTemplate(PlanetType type)

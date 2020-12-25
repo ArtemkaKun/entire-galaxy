@@ -1,5 +1,4 @@
-﻿using System;
-using Unity.Entities;
+﻿using Unity.Entities;
 using UnityEngine;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Enums;
@@ -14,8 +13,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
    {
       public int MaxCountOfStars => countOfStars;
 
-      public float MaxSizeOfGalaxy => maxSizeOfGalaxy;
-
       public Entity StarEntity => _entities.StarEntity;
 
       public Entity PlanetEntity => _entities.PlanetEntity;
@@ -27,7 +24,10 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       [SerializeField] private int countOfStars;
       [SerializeField] private float maxSizeOfGalaxy;
       [SerializeField] private StarType[] secondaryStarTypes;
-      
+      [SerializeField] private Vector2 starYAxisOffset;
+      [SerializeField] private float areaSizeForPlanetSystem;
+      [SerializeField] private Vector2 planetYAxisOffset;
+
       private readonly GalaxyData _data = new GalaxyData();
 
       private GalaxyEntities _entities;
@@ -84,9 +84,9 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
       private void Start()
       {
-         var stars = new StarsGenerator(this).GenerateStars();
+         var stars = new StarsGenerator(this, maxSizeOfGalaxy, starYAxisOffset).GenerateStars();
 
-         new PlanetGenerator(this, stars).GeneratePlanets();
+         new PlanetGenerator(this, stars, areaSizeForPlanetSystem, planetYAxisOffset).GeneratePlanets();
       }
 
       private void OnDestroy()

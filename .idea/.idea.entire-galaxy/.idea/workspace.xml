@@ -21,13 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Materials/SpaceObjectShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Materials/SpaceObjectShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,6 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanetType.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplatesContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/ISpaceObjectTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTypeTemplate.cs" />
@@ -99,6 +95,7 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kTqoC3BqVTYCRp2dLxtCo82e3z" />
@@ -176,7 +173,7 @@
       <workItem from="1608757889268" duration="1098000" />
       <workItem from="1608819404363" duration="2652000" />
       <workItem from="1608896910556" duration="551000" />
-      <workItem from="1608897590459" duration="6237000" />
+      <workItem from="1608897590459" duration="8527000" />
     </task>
     <servers />
   </component>
@@ -205,13 +202,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs</url>
-          <line>45</line>
+          <line>42</line>
           <properties documentPath="C:\Projects\entire-galaxy\Assets\YUART\Scripts\Galaxy Manager\Systems\PlanetGenerator.cs" initialLine="43" containingFunctionPresentation="method 'GeneratePlanets'">
             <startOffsets>
-              <option value="1475" />
+              <option value="1396" />
             </startOffsets>
             <endOffsets>
-              <option value="1509" />
+              <option value="1430" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

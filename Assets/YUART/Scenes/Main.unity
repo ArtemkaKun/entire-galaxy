@@ -250,6 +250,9 @@ MonoBehaviour:
   countOfStars: 2500
   maxSizeOfGalaxy: 25000
   secondaryStarTypes: 0a000000
+  starYAxisOffset: {x: -1000, y: 1000}
+  areaSizeForPlanetSystem: 1000
+  planetYAxisOffset: {x: -100, y: 100}
 --- !u!4 &1238992789
 Transform:
   m_ObjectHideFlags: 0
