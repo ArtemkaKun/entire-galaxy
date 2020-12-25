@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using FastEnumUtility;
 using Unity.Entities;
@@ -19,7 +18,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     /// <summary>
     /// Class, that handles stars generation.
     /// </summary>
-    public sealed class StarsGenerator
+    public sealed class StarsGenerator : SpaceObjectGenerator
     {
         private const float ChanceToSpawnNeutronStar = 0.999f;
         
@@ -28,7 +27,9 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly Entity _starEntity;
         private readonly StarType[] _mainStarTypes;
         private readonly GalaxyManager _galaxyManager;
-        
+
+        private readonly Vector2 _yAxisRange = new Vector2(-1000, 1000);
+
         private EntityManager _entityManager;
 
         public StarsGenerator(GalaxyManager galaxyManager)
@@ -111,7 +112,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             entityManager.SetComponentData(star, new Translation
                 {
-                    Value = GetRandomPositionInGalaxy()
+                    Value = GetRandomPositionInGalaxy(_maxSizeOfGalaxy, Vector3.zero, _yAxisRange)
                 }
             );
 
@@ -120,17 +121,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
                     Value = quaternion.Euler(GetRandomRotation())
                 }
             );
-        }
-
-        private Vector3 GetRandomPositionInGalaxy()
-        {
-            var position = Random.insideUnitCircle * _maxSizeOfGalaxy;
-            return new Vector3(position.x, Random.Range(-1000f, 1000f), position.y);
-        }
-
-        private Vector3 GetRandomRotation()
-        {
-            return new Vector3(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
         }
 
         private (Star.Components.Star, SpaceObject) PrepareStarComponent(StarType type, StarTypeTemplate template)

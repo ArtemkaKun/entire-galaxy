@@ -10,21 +10,22 @@ using YUART.Scripts.Planet.Enums;
 using YUART.Scripts.Space_Objects.Components;
 using YUART.Scripts.Utilities;
 using YUART.Scripts.Utilities.Template_Data_Constructor;
-using Random = UnityEngine.Random;
 
 namespace YUART.Scripts.Galaxy_Manager.Systems
 {
     /// <summary>
     /// Class, that handles planets generation.
     /// </summary>
-    public sealed class PlanetGenerator
+    public sealed class PlanetGenerator : SpaceObjectGenerator
     {
         private const int StarMassForOnePlanet = 10000;
-        
+        private const float AreaSize = 1000f;
+
         private readonly Stack<Entity> _stars;
         private readonly GalaxyManager _galaxyManager;
 
         private readonly PlanetType[] _planetTypes = FastEnum.GetValues<PlanetType>().ToArray();
+        private readonly Vector2 _yAxisRange = new Vector2(-100f, 100f);
 
         private EntityManager _entityManager;
 
@@ -48,7 +49,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
                 var star = _stars.Pop();
 
                 var spaceObjectComponent = _entityManager.GetComponentData<SpaceObject>(star);
-                
+
                 if (!spaceObjectComponent.canHaveSystem || spaceObjectComponent.mass < StarMassForOnePlanet) continue;
 
                 var countOfPlanets = Mathf.RoundToInt(spaceObjectComponent.mass / StarMassForOnePlanet);
@@ -70,9 +71,9 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private Entity SpawnPlanetObject(PlanetType type, Vector3 parentPosition)
         {
             UpdateGalaxyData();
-            
+
             var planet = _entityManager.Instantiate(GalaxyManagerSingleton.Instance.PlanetEntity);
-            
+
             var template = TemplateDataConstructorSingleton.Instance.GetTemplateForType<SpaceObjectTemplate, PlanetType>(type);
 
             SetStarTransforms(planet, template, parentPosition);
@@ -107,7 +108,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             entityManager.SetComponentData(star, new Translation
                 {
-                    Value = GetRandomPositionInGalaxy(parentPosition)
+                    Value = GetRandomPositionInGalaxy(AreaSize, parentPosition, _yAxisRange)
                 }
             );
 
@@ -116,17 +117,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
                     Value = quaternion.Euler(GetRandomRotation())
                 }
             );
-        }
-
-        private Vector3 GetRandomPositionInGalaxy(Vector3 parentPosition)
-        {
-            var position = Random.insideUnitCircle * 1000f + new Vector2(parentPosition.x, parentPosition.z);
-            return new Vector3(position.x, parentPosition.y + Random.Range(-100f, 100f), position.y);
-        }
-
-        private Vector3 GetRandomRotation()
-        {
-            return new Vector3(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
         }
 
         private (Planet.Components.Planet, SpaceObject) PrepareStarComponent(PlanetType type, SpaceObjectTemplate template)

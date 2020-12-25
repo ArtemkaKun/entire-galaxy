@@ -48,6 +48,7 @@
                 <e p="GalaxyManager.cs" t="Include" />
                 <e p="GalaxyManagerSingleton.cs" t="Include" />
                 <e p="PlanetGenerator.cs" t="Include" />
+                <e p="SpaceObjectGenerator.cs" t="Include" />
                 <e p="StarsGenerator.cs" t="Include" />
               </e>
             </e>

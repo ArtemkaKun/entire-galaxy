@@ -22,35 +22,8 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Planet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Planet/Planet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/GalaxyData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/GalaxyData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/GalaxyEntities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/GalaxyEntities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/GalaxyEntities.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ISpaceObjectTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/ISpaceObjectTemplate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ISpaceObjectTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/ISpaceObjectTemplate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplatesContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplatesContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTempaltes.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTempaltes.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTempaltes.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTempaltes.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTemplatesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTemplatesData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTemplatesData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTemplatesData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTypeTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTypeTemplate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTypeTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Star Templates/StarTypeTemplate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/PlanetComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/Planet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/PlanetComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/Planet.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanerType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanetType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanerType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanetType.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Play Mode Tests/StarGeneratorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/StarGenerationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/StarGenerationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,10 +90,11 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/Planet Templates/PlanetTemplatesData.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/TemplatesDataContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/SpaceObjectTemplate.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/Planet.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kTqoC3BqVTYCRp2dLxtCo82e3z" />
@@ -198,7 +172,7 @@
       <workItem from="1608757889268" duration="1098000" />
       <workItem from="1608819404363" duration="2652000" />
       <workItem from="1608896910556" duration="551000" />
-      <workItem from="1608897590459" duration="2662000" />
+      <workItem from="1608897590459" duration="3879000" />
     </task>
     <servers />
   </component>
@@ -227,13 +201,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs</url>
-          <line>43</line>
+          <line>44</line>
           <properties documentPath="C:\Projects\entire-galaxy\Assets\YUART\Scripts\Galaxy Manager\Systems\PlanetGenerator.cs" initialLine="43" containingFunctionPresentation="method 'GeneratePlanets'">
             <startOffsets>
-              <option value="1375" />
+              <option value="1474" />
             </startOffsets>
             <endOffsets>
-              <option value="1409" />
+              <option value="1508" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
