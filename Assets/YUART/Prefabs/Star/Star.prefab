@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2417363870943670943}
   - component: {fileID: -2108316833929661730}
   - component: {fileID: 7389292377826501467}
-  - component: {fileID: 4839748136814954910}
+  - component: {fileID: -4147896089531966759}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -116,7 +116,7 @@ MonoBehaviour:
     y: 0
     z: 0
   canHaveSystem: 0
---- !u!114 &4839748136814954910
+--- !u!114 &-4147896089531966759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8875012632166076902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b516590fe2116074c9367331865002bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5534197792864df78c67a03463bf7888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   value:

@@ -33,6 +33,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             _stars = stars;
             _galaxyManager = galaxyManager;
+
             _entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
         }
 
@@ -84,7 +85,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             _entityManager.SetComponentData(planet, newSpaceObjectData);
 
-            SetStarColor(template, planet);
+            _templateDataConstructor.SetSpaceObjectColor(template, planet);
 
             return planet;
         }
@@ -123,7 +124,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             var newStarData = CreateTypeDataFromTemplate(type);
 
-            var newSpaceObjectData = TemplateDataConstructorSingleton.Instance.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
+            var newSpaceObjectData = _templateDataConstructor.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
 
             return (newStarData, newSpaceObjectData);
         }
@@ -134,16 +135,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             {
                 type = type
             };
-        }
-
-        private void SetStarColor(SpaceObjectTemplate template, Entity star)
-        {
-            var starColor = template.Color;
-
-            _entityManager.SetComponentData(star, new SpaceObjectColor
-            {
-                value = starColor.ConvertToFloat4()
-            });
         }
     }
 }

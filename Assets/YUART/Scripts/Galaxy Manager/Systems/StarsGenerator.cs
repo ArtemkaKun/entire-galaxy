@@ -79,7 +79,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             _entityManager.SetComponentData(star, newSpaceObjectData);
 
-            SetStarColor(template, star);
+            _templateDataConstructor.SetSpaceObjectColor(template, star);
 
             return star;
         }
@@ -127,7 +127,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         {
             var newStarData = CreateTypeDataFromTemplate(type, template);
 
-            var newSpaceObjectData = TemplateDataConstructorSingleton.Instance.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
+            var newSpaceObjectData = _templateDataConstructor.CreateSpaceObjectDataFromTemplate(type.ToName(), template);
             
             return (newStarData, newSpaceObjectData);
         }
@@ -139,16 +139,6 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
                 temperature = template.TemperatureRange.GetRandomValueFromRange(),
                 type = type
             };
-        }
-
-        private void SetStarColor(StarTypeTemplate template, Entity star)
-        {
-            var starColor = template.Color;
-
-            _entityManager.SetComponentData(star, new StarColor
-            {
-                value = starColor.ConvertToFloat4()
-            });
         }
     }
 }
