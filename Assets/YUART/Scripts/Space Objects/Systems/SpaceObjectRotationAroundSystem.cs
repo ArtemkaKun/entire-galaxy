@@ -17,7 +17,7 @@ namespace YUART.Scripts.Space_Objects.Systems
 
             Entities.ForEach((ref Translation translation, ref Rotation rotation, in LocalToWorld localToWorld, in SpaceObject objectData) =>
             {
-                translation.Value = math.mul(Quaternion.AngleAxis(1000 * deltaTime / objectData.mass, localToWorld.Up), translation.Value - objectData.gravityCenter) + objectData.gravityCenter;
+                translation.Value = math.mul(Quaternion.AngleAxis(100 * deltaTime / objectData.mass, localToWorld.Up), translation.Value - objectData.gravityCenter) + objectData.gravityCenter;
             }).WithBurst().ScheduleParallel();
         }
     }

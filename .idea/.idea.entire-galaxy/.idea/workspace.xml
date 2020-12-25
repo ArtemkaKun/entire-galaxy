@@ -22,12 +22,9 @@
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,7 @@
       <workItem from="1608757889268" duration="1098000" />
       <workItem from="1608819404363" duration="2652000" />
       <workItem from="1608896910556" duration="551000" />
-      <workItem from="1608897590459" duration="10061000" />
+      <workItem from="1608897590459" duration="10715000" />
     </task>
     <servers />
   </component>
