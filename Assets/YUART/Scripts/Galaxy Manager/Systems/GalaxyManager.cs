@@ -1,5 +1,6 @@
 ﻿using Unity.Entities;
 using UnityEngine;
+using YUART.Scripts.Galaxy_Manager.Data_Containers;
 using YUART.Scripts.Galaxy_Manager.DataContainers;
 using YUART.Scripts.Star.Enums;
 using YUART.Scripts.Utilities;
@@ -64,6 +65,14 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       public void IncrementPlanetsCount()
       {
          _data.IncrementPlanetsCount();
+      }
+
+      /// <summary>
+      /// Increment count of exo planets.
+      /// </summary>
+      public void IncrementExoPlanetsCount()
+      {
+         _data.IncrementExoPlanetsCount();
       }
       
       private void Awake()

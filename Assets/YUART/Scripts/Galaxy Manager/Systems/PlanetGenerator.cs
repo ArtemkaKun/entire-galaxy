@@ -18,6 +18,10 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     public sealed class PlanetGenerator : SpaceObjectGenerator
     {
         private const int StarMassForOnePlanet = 10000;
+        private const PlanetType ExoPlanetType = PlanetType.E;
+        private const int MinDistanceFromStarForExoPlanet = 35;
+        private const int MaxDistanceFromStarForExoPlanet = 350;
+        private const int MinMassForExoPlanet = 3;
 
         private readonly Stack<Entity> _stars;
         private readonly GalaxyManager _galaxyManager;
@@ -82,6 +86,11 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             templateDataConstructor.SetSpaceObjectColor(template, planet);
 
+            if (CheckIfPlanetIsExoPlanet(type, planet, parentPosition))
+            {
+                AddNewExoPlanetToData();
+            }
+
             return planet;
         }
 
@@ -101,6 +110,22 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             {
                 type = type
             };
+        }
+
+        private bool CheckIfPlanetIsExoPlanet(PlanetType type, Entity planet, Vector3 parentPosition)
+        {
+            if (type != ExoPlanetType) return false;
+
+            var distanceFromStar = Vector3.Distance(_entityManager.GetComponentData<Translation>(planet).Value, parentPosition);
+
+            if (distanceFromStar < MinDistanceFromStarForExoPlanet || distanceFromStar > MaxDistanceFromStarForExoPlanet) return false;
+
+            return _entityManager.GetComponentData<SpaceObject>(planet).mass > MinMassForExoPlanet;
+        }
+
+        private void AddNewExoPlanetToData()
+        {
+            _galaxyManager.IncrementExoPlanetsCount();
         }
     }
 }

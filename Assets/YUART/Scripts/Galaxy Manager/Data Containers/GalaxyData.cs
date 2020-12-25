@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using YUART.Scripts.Star.Enums;
 
-namespace YUART.Scripts.Galaxy_Manager.DataContainers
+namespace YUART.Scripts.Galaxy_Manager.Data_Containers
 {
     /// <summary>
     /// Data class, that stores data of galaxy. 
@@ -78,6 +78,14 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
         public void IncrementPlanetsCount()
         {
             _planetsCount += 1;
+        }
+
+        /// <summary>
+        /// Increment count of exo planets.
+        /// </summary>
+        public void IncrementExoPlanetsCount()
+        {
+            _exoPlanetsCount += 1;
         }
     }
 }
