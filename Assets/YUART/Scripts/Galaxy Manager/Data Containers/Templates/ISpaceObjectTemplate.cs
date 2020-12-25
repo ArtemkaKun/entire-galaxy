@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace YUART.Scripts.Galaxy_Manager.DataContainers.Templates
+namespace YUART.Scripts.Galaxy_Manager.Data_Containers.Templates
 {
     /// <summary>
     /// Interface, that provides methods for SpaceObject template.

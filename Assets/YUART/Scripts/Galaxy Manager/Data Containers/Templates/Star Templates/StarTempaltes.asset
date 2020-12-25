@@ -13,90 +13,90 @@ MonoBehaviour:
   m_Name: StarTempaltes
   m_EditorClassIdentifier: 
   typeO:
-    temperatureRange: {x: 30000, y: 60000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4289966874
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 30000, y: 60000}
   typeB:
-    temperatureRange: {x: 10000, y: 30000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4294967219
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 10000, y: 30000}
   typeA:
-    temperatureRange: {x: 7500, y: 10000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4294967295
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 7500, y: 10000}
   typeF:
-    temperatureRange: {x: 6000, y: 7500}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4288282623
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 6000, y: 7500}
   typeG:
-    temperatureRange: {x: 5000, y: 6000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4278250495
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 5000, y: 6000}
   typeK:
-    temperatureRange: {x: 3500, y: 5000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4278229503
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 3500, y: 5000}
   typeM:
-    temperatureRange: {x: 2000, y: 3500}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4278190335
-    canHavePlanets: 1
+    canHaveSystem: 1
+    temperatureRange: {x: 2000, y: 3500}
   typeT:
-    temperatureRange: {x: 1000, y: 2000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4281558783
-    canHavePlanets: 0
+    canHaveSystem: 0
+    temperatureRange: {x: 1000, y: 2000}
   typeW:
-    temperatureRange: {x: 500, y: 1000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4279388343
-    canHavePlanets: 0
+    canHaveSystem: 0
+    temperatureRange: {x: 500, y: 1000}
   typeR:
-    temperatureRange: {x: 3000, y: 5000}
     massRange: {x: 10000, y: 100000}
     sizeRange: {x: 17.5, y: 150}
     color:
       serializedVersion: 2
       rgba: 4278229503
-    canHavePlanets: 1
+    canHaveSystem: 0
+    temperatureRange: {x: 3000, y: 5000}
   typeN:
-    temperatureRange: {x: 0, y: 500}
     massRange: {x: 0, y: 100000}
     sizeRange: {x: 15, y: 15}
     color:
       serializedVersion: 2
       rgba: 4282795590
-    canHavePlanets: 0
+    canHaveSystem: 0
+    temperatureRange: {x: 0, y: 500}

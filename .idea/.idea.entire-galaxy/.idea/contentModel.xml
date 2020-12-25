@@ -28,16 +28,20 @@
         <e p="YUART" t="Include">
           <e p="Scripts" t="Include">
             <e p="Galaxy Manager" t="Include">
-              <e p="DataContainers" t="Include">
+              <e p="Data Containers" t="Include">
                 <e p="GalaxyData.cs" t="Include" />
                 <e p="GalaxyEntities.cs" t="Include" />
                 <e p="Templates" t="Include">
                   <e p="ISpaceObjectTemplate.cs" t="Include" />
-                  <e p="ITemplatesContainer.cs" t="Include" />
-                  <e p="StarTemplates" t="Include">
+                  <e p="Planet Templates" t="Include">
+                    <e p="PlanetTemplatesData.cs" t="Include" />
+                  </e>
+                  <e p="SpaceObjectTemplate.cs" t="Include" />
+                  <e p="Star Templates" t="Include">
                     <e p="StarTemplatesData.cs" t="Include" />
                     <e p="StarTypeTemplate.cs" t="Include" />
                   </e>
+                  <e p="TemplatesDataContainer.cs" t="Include" />
                 </e>
               </e>
               <e p="Systems" t="Include">
@@ -49,10 +53,10 @@
             </e>
             <e p="Planet" t="Include">
               <e p="Components" t="Include">
-                <e p="PlanetComponent.cs" t="Include" />
+                <e p="Planet.cs" t="Include" />
               </e>
               <e p="Enums" t="Include">
-                <e p="PlanerType.cs" t="Include" />
+                <e p="PlanetType.cs" t="Include" />
               </e>
             </e>
             <e p="Play Mode Tests" t="Include">

@@ -3,7 +3,7 @@
     /// <summary>
     /// Enum, that represent types of planets.
     /// </summary>
-    public enum PlanerType
+    public enum PlanetType
     {
         E,
         G

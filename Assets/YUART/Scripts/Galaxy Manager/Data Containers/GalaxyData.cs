@@ -23,11 +23,11 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
         private int _starsClassRCount;
         private int _starsClassNCount;
     
-        private int planetsCount;
-        private int exoPlanetsCount;
-        private int satellitesCount;
+        private int _planetsCount;
+        private int _exoPlanetsCount;
+        private int _satellitesCount;
 
-        private Dictionary<StarType, int> _starCountsDictionary;
+        private readonly Dictionary<StarType, int> _starCountsDictionary;
         
         public GalaxyData()
         {
@@ -70,6 +70,14 @@ namespace YUART.Scripts.Galaxy_Manager.DataContainers
         public void IncrementSecondaryStarsCount()
         {
             _secondaryStarsCount += 1;
+        }
+
+        /// <summary>
+        /// Increment count of planets.
+        /// </summary>
+        public void IncrementPlanetsCount()
+        {
+            _planetsCount += 1;
         }
     }
 }

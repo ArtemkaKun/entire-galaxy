@@ -58,6 +58,14 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
          _data.IncrementSecondaryStarsCount();
       }
       
+      /// <summary>
+      /// Increment count of planets.
+      /// </summary>
+      public void IncrementPlanetsCount()
+      {
+         _data.IncrementPlanetsCount();
+      }
+      
       private void Awake()
       {
          InitializeGalaxyEntities();
@@ -78,7 +86,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
       {
          var stars = new StarsGenerator(this).GenerateStars();
 
-         new PlanetGenerator(stars).GeneratePlanets();
+         new PlanetGenerator(this, stars).GeneratePlanets();
       }
 
       private void OnDestroy()

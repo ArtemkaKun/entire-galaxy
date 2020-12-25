@@ -6,7 +6,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
-using YUART.Scripts.Galaxy_Manager.DataContainers.Templates.StarTemplates;
+using YUART.Scripts.Galaxy_Manager.Data_Containers.Templates.Star_Templates;
 using YUART.Scripts.Space_Objects.Components;
 using YUART.Scripts.Star.Components;
 using YUART.Scripts.Star.Enums;

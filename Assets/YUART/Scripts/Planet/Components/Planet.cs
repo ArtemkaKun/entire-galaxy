@@ -7,8 +7,8 @@ namespace YUART.Scripts.Planet.Components
     /// Component, that stores planet data.
     /// </summary>
     [GenerateAuthoringComponent]
-    public struct PlanetComponent : IComponentData
+    public struct Planet : IComponentData
     {
-        public PlanerType type;
+        public PlanetType type;
     }
 }
