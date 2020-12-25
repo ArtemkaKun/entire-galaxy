@@ -23,6 +23,8 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
         private readonly StarType[] _mainStarTypes;
         private readonly GalaxyManager _galaxyManager;
 
+        private readonly Vector3 galaxyCenterPosition = Vector3.zero;
+
         private EntityManager _entityManager;
 
         public StarsGenerator(GalaxyManager galaxyManager, float areaSize, Vector2 yAxisRange) : base(areaSize, yAxisRange)
@@ -63,11 +65,11 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             
             var template = TemplateDataConstructorSingleton.Instance.GetTemplateForType<StarTypeTemplate, StarType>(type);
 
-            SetSpaceObjectTransforms(star, template, Vector3.zero);
+            SetSpaceObjectTransforms(star, template, galaxyCenterPosition);
 
             _entityManager.SetComponentData(star, PrepareStarComponent(type, template));
             
-            _entityManager.SetComponentData(star, PrepareSpaceObjectComponent(type.ToName(), template));
+            _entityManager.SetComponentData(star, PrepareSpaceObjectComponent(type.ToName(), template, galaxyCenterPosition));
 
             templateDataConstructor.SetSpaceObjectColor(template, star);
 

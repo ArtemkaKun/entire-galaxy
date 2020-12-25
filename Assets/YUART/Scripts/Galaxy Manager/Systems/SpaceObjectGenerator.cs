@@ -16,6 +16,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
     public class SpaceObjectGenerator
     {
         protected readonly TemplateDataConstructor templateDataConstructor;
+
         private readonly float _areaSize;
         private readonly Vector2 _yAxisRange;
 
@@ -51,20 +52,20 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
             );
         }
 
-        protected Vector3 GetRandomPositionInGalaxy(float areaSize, Vector3 parentPosition, Vector2 yAxisRange)
+        private Vector3 GetRandomPositionInGalaxy(float areaSize, Vector3 parentPosition, Vector2 yAxisRange)
         {
             var position = Random.insideUnitCircle * areaSize + new Vector2(parentPosition.x, parentPosition.z);
             return new Vector3(position.x, parentPosition.y + yAxisRange.GetRandomValueFromRange(), position.y);
         }
 
-        protected Vector3 GetRandomRotation()
+        private Vector3 GetRandomRotation()
         {
             return new Vector3(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
         }
 
-        protected SpaceObject PrepareSpaceObjectComponent(string typeName, SpaceObjectTemplate template)
+        protected SpaceObject PrepareSpaceObjectComponent(string typeName, SpaceObjectTemplate template, Vector3 parentPosition)
         {
-            return templateDataConstructor.CreateSpaceObjectDataFromTemplate(typeName, template);
+            return templateDataConstructor.CreateSpaceObjectDataFromTemplate(typeName, template, parentPosition);
         }
     }
 }

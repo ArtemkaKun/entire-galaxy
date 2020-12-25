@@ -138,7 +138,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "1093a63503784824bdbf97a509f45869",
     "m_Id": 0,
-    "m_DisplayName": "StarColor",
+    "m_DisplayName": "Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ef6b92-e789-4393-851c-8300b5533ba3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.entire-galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Prefabs/Star/Materials/StarColor.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../AI-BIMS/Assets/_AIBIMS/Scripts/Utilities/ECS Tools/EcsConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/3f/09292fd1/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.16.0-preview.21/Unity.Entities/Types/TypeManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/Planet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Project_Galaxy/Assets/Resources/Scripts/StarsGeneration.cs" root0="SKIP_HIGHLIGHTING" />
@@ -77,7 +81,6 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ITemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/ISpaceObjectTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/DataContainers/Templates/StarTemplates/StarTypeTemplate.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectSelfRotationSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Star/Systems/PlanetsGenerationSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Enums/PlanetType.cs" />
@@ -91,11 +94,12 @@
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/TemplatesDataContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Data Containers/Templates/SpaceObjectTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Planet/Components/Planet.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Utilities/Template Data Constructor/TemplateDataConstructor.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/SpaceObjectGenerator.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/StarsGenerator.cs" />
-      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/GalaxyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Galaxy Manager/Systems/PlanetGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/YUART/Scripts/Space Objects/Systems/SpaceObjectRotationAroundSystem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kTqoC3BqVTYCRp2dLxtCo82e3z" />
@@ -173,7 +177,7 @@
       <workItem from="1608757889268" duration="1098000" />
       <workItem from="1608819404363" duration="2652000" />
       <workItem from="1608896910556" duration="551000" />
-      <workItem from="1608897590459" duration="8527000" />
+      <workItem from="1608897590459" duration="10061000" />
     </task>
     <servers />
   </component>

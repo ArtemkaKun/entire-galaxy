@@ -78,7 +78,7 @@ namespace YUART.Scripts.Galaxy_Manager.Systems
 
             _entityManager.SetComponentData(planet, PreparePlanetComponents(type));
 
-            _entityManager.SetComponentData(planet, PrepareSpaceObjectComponent(type.ToName(), template));
+            _entityManager.SetComponentData(planet, PrepareSpaceObjectComponent(type.ToName(), template, parentPosition));
 
             templateDataConstructor.SetSpaceObjectColor(template, planet);
 

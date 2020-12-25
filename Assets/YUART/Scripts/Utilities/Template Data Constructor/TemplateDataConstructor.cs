@@ -58,14 +58,15 @@ namespace YUART.Scripts.Utilities.Template_Data_Constructor
         /// </summary>
         /// <param name="typeName">Name of type.</param>
         /// <param name="template">Template.</param>
+        /// <param name="parentPosition">Position of the parent.</param>
         /// <returns>SpaceObject object.</returns>
-        public SpaceObject CreateSpaceObjectDataFromTemplate(string typeName, SpaceObjectTemplate template)
+        public SpaceObject CreateSpaceObjectDataFromTemplate(string typeName, SpaceObjectTemplate template, float3 parentPosition)
         {
             return new SpaceObject
             {
                 name = NameGenerator.GetRandomNameFromType(typeName),
                 mass = template.MassRange.GetRandomValueFromRange(),
-                gravityCenter = float3.zero,
+                gravityCenter = parentPosition,
                 canHaveSystem = template.CanHaveSystem
             };
         }
